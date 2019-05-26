@@ -1,0 +1,54 @@
+C:\Users\User\Documents\GitHub\AerometrixFlightLines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.deps.json
+C:\Users\User\Documents\GitHub\AerometrixFlightLines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.dll
+C:\Users\User\Documents\GitHub\AerometrixFlightLines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.pdb
+C:\Users\User\Documents\GitHub\AerometrixFlightLines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\AerometrixFlightLines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\AerometrixFlightLines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\AerometrixFlightLines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\AerometrixFlightLines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.dll
+C:\Users\User\Documents\GitHub\AerometrixFlightLines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.pdb
+C:\Users\User\Documents\GitHub\Aerometrex_Flight_Lines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.deps.json
+C:\Users\User\Documents\GitHub\Aerometrex_Flight_Lines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.dll
+C:\Users\User\Documents\GitHub\Aerometrex_Flight_Lines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.pdb
+C:\Users\User\Documents\GitHub\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.dll
+C:\Users\User\Documents\GitHub\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.pdb
+C:\Users\aus186\source\repos\Leaflet_HTML\Areometrex_Leaflet\Aerometrex_Flight_Lines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.deps.json
+C:\Users\aus186\source\repos\Leaflet_HTML\Areometrex_Leaflet\Aerometrex_Flight_Lines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.dll
+C:\Users\aus186\source\repos\Leaflet_HTML\Areometrex_Leaflet\Aerometrex_Flight_Lines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.pdb
+C:\Users\aus186\source\repos\Leaflet_HTML\Areometrex_Leaflet\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.csprojAssemblyReference.cache
+C:\Users\aus186\source\repos\Leaflet_HTML\Areometrex_Leaflet\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.csproj.CoreCompileInputs.cache
+C:\Users\aus186\source\repos\Leaflet_HTML\Areometrex_Leaflet\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.AssemblyInfoInputs.cache
+C:\Users\aus186\source\repos\Leaflet_HTML\Areometrex_Leaflet\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.AssemblyInfo.cs
+C:\Users\aus186\source\repos\Leaflet_HTML\Areometrex_Leaflet\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.dll
+C:\Users\aus186\source\repos\Leaflet_HTML\Areometrex_Leaflet\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.pdb
+C:\Users\jeff\source\repos\Aerometrex_Flight_Lines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.deps.json
+C:\Users\jeff\source\repos\Aerometrex_Flight_Lines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.dll
+C:\Users\jeff\source\repos\Aerometrex_Flight_Lines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.pdb
+C:\Users\jeff\source\repos\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.csprojAssemblyReference.cache
+C:\Users\jeff\source\repos\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.csproj.CoreCompileInputs.cache
+C:\Users\jeff\source\repos\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.AssemblyInfoInputs.cache
+C:\Users\jeff\source\repos\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.AssemblyInfo.cs
+C:\Users\jeff\source\repos\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.dll
+C:\Users\jeff\source\repos\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.pdb
+C:\Users\Paul\Desktop\Jeffs version flight_lines\Aerometrex_Flight_Lines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.deps.json
+C:\Users\Paul\Desktop\Jeffs version flight_lines\Aerometrex_Flight_Lines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.dll
+C:\Users\Paul\Desktop\Jeffs version flight_lines\Aerometrex_Flight_Lines\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.pdb
+C:\Users\Paul\Desktop\Jeffs version flight_lines\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.csprojAssemblyReference.cache
+C:\Users\Paul\Desktop\Jeffs version flight_lines\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.csproj.CoreCompileInputs.cache
+C:\Users\Paul\Desktop\Jeffs version flight_lines\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.AssemblyInfoInputs.cache
+C:\Users\Paul\Desktop\Jeffs version flight_lines\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.AssemblyInfo.cs
+C:\Users\Paul\Desktop\Jeffs version flight_lines\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.dll
+C:\Users\Paul\Desktop\Jeffs version flight_lines\Aerometrex_Flight_Lines\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.pdb
+C:\Users\Paul\source\repos\FlightPlanMatcher\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.deps.json
+C:\Users\Paul\source\repos\FlightPlanMatcher\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.dll
+C:\Users\Paul\source\repos\FlightPlanMatcher\Atlass.Riegl\bin\Debug\netstandard2.0\Atlass.Riegl.pdb
+C:\Users\Paul\source\repos\FlightPlanMatcher\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.csprojAssemblyReference.cache
+C:\Users\Paul\source\repos\FlightPlanMatcher\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.csproj.CoreCompileInputs.cache
+C:\Users\Paul\source\repos\FlightPlanMatcher\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.AssemblyInfoInputs.cache
+C:\Users\Paul\source\repos\FlightPlanMatcher\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.AssemblyInfo.cs
+C:\Users\Paul\source\repos\FlightPlanMatcher\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.dll
+C:\Users\Paul\source\repos\FlightPlanMatcher\Atlass.Riegl\obj\Debug\netstandard2.0\Atlass.Riegl.pdb

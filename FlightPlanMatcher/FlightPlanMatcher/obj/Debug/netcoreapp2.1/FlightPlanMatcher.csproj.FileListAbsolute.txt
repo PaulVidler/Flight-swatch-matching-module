@@ -1,0 +1,4 @@
+C:\Users\Paul\source\repos\FlightPlanMatcher\FlightPlanMatcher\obj\Debug\netcoreapp2.1\FlightPlanMatcher.csprojAssemblyReference.cache
+C:\Users\Paul\source\repos\FlightPlanMatcher\FlightPlanMatcher\obj\Debug\netcoreapp2.1\FlightPlanMatcher.csproj.CoreCompileInputs.cache
+C:\Users\Paul\source\repos\FlightPlanMatcher\FlightPlanMatcher\obj\Debug\netcoreapp2.1\FlightPlanMatcher.AssemblyInfoInputs.cache
+C:\Users\Paul\source\repos\FlightPlanMatcher\FlightPlanMatcher\obj\Debug\netcoreapp2.1\FlightPlanMatcher.AssemblyInfo.cs

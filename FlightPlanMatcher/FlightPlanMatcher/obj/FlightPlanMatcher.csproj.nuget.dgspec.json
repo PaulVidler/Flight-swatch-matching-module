@@ -1,0 +1,115 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\FlightPlanMatcher\\FlightPlanMatcher.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj",
+        "projectName": "Atlass.Riegl",
+        "projectPath": "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj",
+        "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\Atlass.Riegl\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Paul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\FlightPlanMatcher\\FlightPlanMatcher.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\FlightPlanMatcher\\FlightPlanMatcher.csproj",
+        "projectName": "FlightPlanMatcher",
+        "projectPath": "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\FlightPlanMatcher\\FlightPlanMatcher.csproj",
+        "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\FlightPlanMatcher\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Paul\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj": {
+                "projectPath": "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
