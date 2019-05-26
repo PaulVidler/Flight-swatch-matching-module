@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj": {}
+    "C:\\Users\\Paul\\Documents\\GitHub\\Flight-swatch-matching-module\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj": {
+    "C:\\Users\\Paul\\Documents\\GitHub\\Flight-swatch-matching-module\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj",
+        "projectUniqueName": "C:\\Users\\Paul\\Documents\\GitHub\\Flight-swatch-matching-module\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj",
         "projectName": "Atlass.Riegl",
-        "projectPath": "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj",
+        "projectPath": "C:\\Users\\Paul\\Documents\\GitHub\\Flight-swatch-matching-module\\FlightPlanMatcher\\Atlass.Riegl\\Atlass.Riegl.csproj",
         "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Paul\\source\\repos\\FlightPlanMatcher\\Atlass.Riegl\\obj\\",
+        "outputPath": "C:\\Users\\Paul\\Documents\\GitHub\\Flight-swatch-matching-module\\FlightPlanMatcher\\Atlass.Riegl\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

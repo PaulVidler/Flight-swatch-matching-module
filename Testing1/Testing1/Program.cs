@@ -4,6 +4,7 @@ using System.Xml;
 using System.Xml.XPath;
 using System.Xml.Linq;
 using System.Text.RegularExpressions;
+using System.Collections;
 
 namespace Testing1
 {
@@ -14,9 +15,7 @@ namespace Testing1
 
         public static void Main()
         {
-            PlannedSwath plannedSwath = new PlannedSwath();
-
-
+            
             //Create the XmlDocument.
             XmlDocument doc = new XmlDocument();
             doc.Load(@"C:\Users\Paul\Desktop\Program_for_Dean\Callide_1904_AMG_750.kml");
@@ -24,45 +23,67 @@ namespace Testing1
             XmlNodeList name = doc.GetElementsByTagName("name");
             XmlNodeList coords = doc.GetElementsByTagName("coordinates");
 
-            Console.WriteLine(name.Count);
-            Console.WriteLine(coords.Count);
+            ArrayList coordStrings = new ArrayList();
+            ArrayList runNumber = new ArrayList();
+            ArrayList startLat = new ArrayList();
+            ArrayList startLong = new ArrayList();
+            ArrayList endLat = new ArrayList();
+            ArrayList endLong = new ArrayList();
+            ArrayList altitude = new ArrayList();
 
 
+            // loop through XML list of "runs" and add to ordered list
             for (int i = 0; i < name.Count; i++)
             {
                 if (name[i].InnerText.Length > 0)
                 {
                     if (name[i].InnerText.Contains("Run"))
                     {
-                        plannedSwath.PlannedOrder = name[i].FirstChild.InnerText;
+                        runNumber.Add(name[i].FirstChild.InnerText);
                     }
 
                 }
             }
 
+            // loop through XML list of "coords" and add to ordered list
             for (int i = 0; i < coords.Count; i++)
             {
                 if (coords[i].InnerText.Length > 0)
                 {
-                    Console.WriteLine(i + ": " + coords[i].FirstChild.InnerText);
+                    coordStrings.Add(coords[i].FirstChild.InnerText);
 
                 }
             }
 
-            string testCoords = coords[1].FirstChild.InnerText;
+            foreach (var item in coordStrings)
+            {
+                splitToArray(item.ToString());
 
-            Console.WriteLine("New coords: " + testCoords.ToString());
+            }
 
-            string[] split = testCoords.Split(new Char[] { ',',' '},
+            // method to split coord strings into individual arrays
+            string[] splitToArray(string arrayString)
+            {
+                string[] split = arrayString.Split(new Char[] { ',', ' ' },
                                  StringSplitOptions.RemoveEmptyEntries);
+                return split;
+
+            }
+
+            //string testCoords = coords[1].FirstChild.InnerText;
+
+            //Console.WriteLine("New coords: " + testCoords.ToString());
+
+            // string[] split = testCoords.Split(new Char[] { ',',' '},
+                                 //StringSplitOptions.RemoveEmptyEntries);
 
 
-            Console.WriteLine("Lat: " + split[0]);
-            Console.WriteLine("Long: " + split[1]);
-            Console.WriteLine("Alt: " + split[2]);
-            Console.WriteLine("EndLat: " + split[3]);
-            Console.WriteLine("endLong: " + split[4]);
-            Console.WriteLine("EndAlt: " + split[5]);
+            //Console.WriteLine("Lat: " + split[0]);
+            //Console.WriteLine("Long: " + split[1]);
+            //Console.WriteLine("Alt: " + split[2]);
+            //Console.WriteLine("EndLat: " + split[3]);
+            //Console.WriteLine("endLong: " + split[4]);
+            //Console.WriteLine("EndAlt: " + split[5]);
 
 
         }

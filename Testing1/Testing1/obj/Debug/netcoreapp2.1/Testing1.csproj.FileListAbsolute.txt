@@ -9,3 +9,14 @@ C:\Users\Paul\source\repos\Testing1\Testing1\bin\Debug\netcoreapp2.1\Testing1.dl
 C:\Users\Paul\source\repos\Testing1\Testing1\bin\Debug\netcoreapp2.1\Testing1.pdb
 C:\Users\Paul\source\repos\Testing1\Testing1\obj\Debug\netcoreapp2.1\Testing1.dll
 C:\Users\Paul\source\repos\Testing1\Testing1\obj\Debug\netcoreapp2.1\Testing1.pdb
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Testing1\Testing1\bin\Debug\netcoreapp2.1\Testing1.deps.json
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Testing1\Testing1\bin\Debug\netcoreapp2.1\Testing1.runtimeconfig.json
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Testing1\Testing1\bin\Debug\netcoreapp2.1\Testing1.runtimeconfig.dev.json
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Testing1\Testing1\bin\Debug\netcoreapp2.1\Testing1.dll
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Testing1\Testing1\bin\Debug\netcoreapp2.1\Testing1.pdb
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Testing1\Testing1\obj\Debug\netcoreapp2.1\Testing1.csprojAssemblyReference.cache
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Testing1\Testing1\obj\Debug\netcoreapp2.1\Testing1.csproj.CoreCompileInputs.cache
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Testing1\Testing1\obj\Debug\netcoreapp2.1\Testing1.AssemblyInfoInputs.cache
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Testing1\Testing1\obj\Debug\netcoreapp2.1\Testing1.AssemblyInfo.cs
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Testing1\Testing1\obj\Debug\netcoreapp2.1\Testing1.dll
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Testing1\Testing1\obj\Debug\netcoreapp2.1\Testing1.pdb

@@ -694,11 +694,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paul\\source\\repos\\Testing1\\Testing1\\Testing1.csproj",
+      "projectUniqueName": "C:\\Users\\Paul\\Documents\\GitHub\\Flight-swatch-matching-module\\Testing1\\Testing1\\Testing1.csproj",
       "projectName": "Testing1",
-      "projectPath": "C:\\Users\\Paul\\source\\repos\\Testing1\\Testing1\\Testing1.csproj",
+      "projectPath": "C:\\Users\\Paul\\Documents\\GitHub\\Flight-swatch-matching-module\\Testing1\\Testing1\\Testing1.csproj",
       "packagesPath": "C:\\Users\\Paul\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paul\\source\\repos\\Testing1\\Testing1\\obj\\",
+      "outputPath": "C:\\Users\\Paul\\Documents\\GitHub\\Flight-swatch-matching-module\\Testing1\\Testing1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
