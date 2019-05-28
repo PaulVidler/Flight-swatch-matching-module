@@ -31,6 +31,8 @@ namespace Testing1
             ArrayList endLong = new ArrayList();
             ArrayList altitude = new ArrayList();
 
+            string[] split;
+
 
             // loop through XML list of "runs" and add to ordered list
             for (int i = 0; i < name.Count; i++)
@@ -55,6 +57,7 @@ namespace Testing1
                 }
             }
 
+            // loop through coords string and split to an array. Returns the array "split" of coords in particular order.
             foreach (var item in coordStrings)
             {
                 splitToArray(item.ToString());
@@ -64,12 +67,21 @@ namespace Testing1
             // method to split coord strings into individual arrays
             string[] splitToArray(string arrayString)
             {
-                string[] split = arrayString.Split(new Char[] { ',', ' ' },
+                split = arrayString.Split(new Char[] { ',', ' ' },
                                  StringSplitOptions.RemoveEmptyEntries);
                 return split;
 
             }
 
+            // now data is available to add to a swath, then loop through "swaths" in a container to prepare a "project"
+            
+            
+            
+            
+            
+            
+            
+            
             //string testCoords = coords[1].FirstChild.InnerText;
 
             //Console.WriteLine("New coords: " + testCoords.ToString());
