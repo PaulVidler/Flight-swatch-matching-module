@@ -12,7 +12,6 @@ namespace Testing1
     {
         
 
-
         public static void Main()
         {
             
@@ -61,42 +60,48 @@ namespace Testing1
             foreach (var item in coordStrings)
             {
                 splitToArray(item.ToString());
+                startLong.Add(split[0]);
+                startLat.Add(split[1]);
+                altitude.Add(split[2]);
+                endLong.Add(split[3]);
+                endLat.Add(split[4]);
 
             }
 
-            // method to split coord strings into individual arrays
+            // method to split coord strings into individual arrays (Used in loop that splits coord string into individual coords etc)
             string[] splitToArray(string arrayString)
             {
                 split = arrayString.Split(new Char[] { ',', ' ' },
                                  StringSplitOptions.RemoveEmptyEntries);
+                
                 return split;
 
             }
 
-            // now data is available to add to a swath, then loop through "swaths" in a container to prepare a "project"
             
-            
-            
-            
-            
-            
-            
-            
-            //string testCoords = coords[1].FirstChild.InnerText;
+            //new planned flight object used to add swaths to.
+            PlannedFlight flight = new PlannedFlight();
 
-            //Console.WriteLine("New coords: " + testCoords.ToString());
+            // counter for loop to add details to swaths
+            int counter = 0;
 
-            // string[] split = testCoords.Split(new Char[] { ',',' '},
-                                 //StringSplitOptions.RemoveEmptyEntries);
+            foreach (var i in runNumber)
+            {
+                PlannedSwath swath = new PlannedSwath();
 
+                swath.StartLat = Convert.ToDouble(startLat[counter]);
+                swath.StartLong = Convert.ToDouble(startLong[counter]);
+                swath.EndLat = Convert.ToDouble(endLat[counter]);
+                swath.EndLong = Convert.ToDouble(endLong[counter]);
+                swath.PlannedOrder = (string)i;
+                swath.PlannedAltitude = Convert.ToInt32(altitude[counter]);
 
-            //Console.WriteLine("Lat: " + split[0]);
-            //Console.WriteLine("Long: " + split[1]);
-            //Console.WriteLine("Alt: " + split[2]);
-            //Console.WriteLine("EndLat: " + split[3]);
-            //Console.WriteLine("endLong: " + split[4]);
-            //Console.WriteLine("EndAlt: " + split[5]);
+                flight.AddSwath(swath);
 
+                counter++;
+            }
+
+            Console.WriteLine(flight.totalPlannedSwaths());
 
         }
     }
@@ -104,13 +109,13 @@ namespace Testing1
 
     class PlannedSwath
     {
-        public float StartLat { get; set; }
-        public float StartLong { get; set; }
-        public float EndLat { get; set; }
-        public float EndLong { get; set; }
+        public double StartLat { get; set; }
+        public double StartLong { get; set; }
+        public double EndLat { get; set; }
+        public double EndLong { get; set; }
         // flight run number according to KML flight plan
         public string PlannedOrder { get; set; }
-
+        public int PlannedAltitude { get; set; }
 
     }
 
