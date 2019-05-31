@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+
+<Document>
+	<name>Callide_1904_AMG_750</name>
+	<Style id="GCP">
+		<IconStyle>
+			<color>FFFFFFFF</color>
+			<scale>0.3</scale>
+			<Icon>
+				<href>graphics\GCP.jpg</href>
+				<x>224</x> <y>224</y> <w>32</w> <h>32</h>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>FF00FFFF</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00606060</color>
+		</PolyStyle>
+	</Style>
+	<Style id="photo">
+		<IconStyle>
+			<color>FFFFFFFF</color>
+			<scale>0.3</scale>
+			<Icon>
+				<href>graphics\photo.jpg</href>
+				<x>224</x> <y>224</y> <w>32</w> <h>32</h>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>FF46FF46</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>2800FFFF</color>
+		</PolyStyle>
+	</Style>
+	<Style id="photo_nonr">
+		<IconStyle>
+			<color>FFFFFFFF</color>
+			<scale>0.3</scale>
+			<Icon>
+				<href>graphics\photo.jpg</href>
+				<x>224</x> <y>224</y> <w>32</w> <h>32</h>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0.0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>FF46FF46</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>2800FFFF</color>
+		</PolyStyle>
+	</Style>
+	<Style id="flightline">
+		<IconStyle>
+			<color>FFFFFFFF</color>
+			<scale>0.3</scale>
+			<Icon>
+				<href>graphics\photo.jpg</href>
+				<x>224</x> <y>224</y> <w>32</w> <h>32</h>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>FF0000D7</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00606060</color>
+		</PolyStyle>
+	</Style>
+	<Style id="limits">
+		<IconStyle>
+			<color>FFFFFFFF</color>
+			<scale>0.3</scale>
+			<Icon>
+				<href>graphics\photo.jpg</href>
+				<x>224</x> <y>224</y> <w>32</w> <h>32</h>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>FFA00000</color>
+			<width>5</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>470060FF</color>
+		</PolyStyle>
+	</Style>
+	<Style id="normal">
+		<IconStyle>
+			<color>FFFFFFFF</color>
+			<scale>0.3</scale>
+			<Icon>
+				<href>graphics\photopos.jpg</href>
+				<x>224</x> <y>224</y> <w>32</w> <h>32</h>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>FF46FF46</color>
+			<width>2</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>2800FFFF</color>
+		</PolyStyle>
+	</Style>
+	<Style id="highlight">
+		<IconStyle>
+			<color>FFFFFFFF</color>
+			<scale>0.6</scale>
+			<Icon>
+				<href>graphics\photopos.jpg</href>
+				<x>224</x> <y>224</y> <w>32</w> <h>32</h>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<scale>1.0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>FF3F00FF</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>7F808080</color>
+		</PolyStyle>
+	</Style>
+	<StyleMap id="rollover">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#normal</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#highlight</styleUrl>
+		</Pair>
+	</StyleMap>
+
+<Folder>
+	<name> Run-1</name>
+	<Placemark>
+		<name> run 1</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.55311755,-24.27709366,1082 150.66316849,-24.31265013,1082
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-2</name>
+	<Placemark>
+		<name> run 2</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.54894435,-24.28109729,1074 150.66335512,-24.31805107,1074
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-3</name>
+	<Placemark>
+		<name> run 3</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.54713815,-24.28592433,1066 150.66212069,-24.32305098,1066
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-4</name>
+	<Placemark>
+		<name> run 4</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.54782838,-24.29151378,1060 150.66060320,-24.32790208,1060
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-5</name>
+	<Placemark>
+		<name> run 5</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.54851829,-24.29712128,1062 150.65573517,-24.33172651,1062
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-6</name>
+	<Placemark>
+		<name> run 6</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.54913967,-24.30270961,1062 150.64921186,-24.33501059,1062
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-7</name>
+	<Placemark>
+		<name> run 7</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.56416107,-24.31292562,1056 150.63767422,-24.33666373,1056
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-8</name>
+	<Placemark>
+		<name> run 8</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.58993367,-24.32669641,1044 150.62861340,-24.33914907,1044
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-9</name>
+	<Placemark>
+		<name> run 9</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.61049416,-24.33869311,1044 150.62672164,-24.34391264,1044
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-10</name>
+	<Placemark>
+		<name> run 10</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.48152163,-24.23114503,1029 150.48649644,-24.24546155,1029
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-11</name>
+	<Placemark>
+		<name> run 11</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.47647031,-24.19978578,1029 150.49241293,-24.24595639,1029
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-12</name>
+	<Placemark>
+		<name> run 12</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.48103874,-24.19616070,1029 150.49914488,-24.24854946,1029
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-13</name>
+	<Placemark>
+		<name> run 13</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.48556774,-24.19252578,1029 150.50657423,-24.25325681,1029
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-14</name>
+	<Placemark>
+		<name> run 14</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.49013584,-24.18889135,1029 150.51255889,-24.25381519,1029
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-15</name>
+	<Placemark>
+		<name> run 15</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.49539120,-24.18733508,1029 150.51780626,-24.25229428,1029
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-16</name>
+	<Placemark>
+		<name> run 16</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.50064575,-24.18581471,1029 150.52309358,-24.25073773,1029
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-17</name>
+	<Placemark>
+		<name> run 17</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.50592021,-24.18427642,1029 150.52909760,-24.25131382,1029
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-18</name>
+	<Placemark>
+		<name> run 18</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.51117489,-24.18273762,1029 150.53435490,-24.24977443,1029
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-19</name>
+	<Placemark>
+		<name> run 19</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.51714648,-24.18329540,1041 150.54021088,-24.24986026,1041
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-20</name>
+	<Placemark>
+		<name> run 20</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.47752789,-24.24099855,997 150.53766445,-24.21798296,997
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-21</name>
+	<Placemark>
+		<name> run 21</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.61169071,-24.25114433,1166 150.64949858,-24.26709725,1166
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-22</name>
+	<Placemark>
+		<name> run 22</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.60634793,-24.25412938,1148 150.64746871,-24.27145288,1148
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-23</name>
+	<Placemark>
+		<name> run 23</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.59914276,-24.25666057,1146 150.64572520,-24.27629134,1146
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-24</name>
+	<Placemark>
+		<name> run 24</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.59319822,-24.25968075,1125 150.64113855,-24.27990313,1125
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-25</name>
+	<Placemark>
+		<name> run 25</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.58854231,-24.26327175,1125 150.63878861,-24.28449737,1125
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-26</name>
+	<Placemark>
+		<name> run 26</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.58620092,-24.26785619,1125 150.63650741,-24.28909262,1125
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+<Folder>
+	<name> Run-27</name>
+	<Placemark>
+		<name> run 27</name>
+		<Snippet></Snippet>
+		<styleUrl>#flightline</styleUrl>
+		<LineString>
+			<tessellate>1</tessellate>
+			<extrude>0</extrude>
+			<altitudeMode>absolute</altitudeMode>
+			<coordinates>150.61801094,-24.34765749,1093 150.62604562,-24.24899511,1093
+			</coordinates>
+		</LineString>
+	</Placemark>
+</Folder>
+
+</Document>
+
+</kml>
