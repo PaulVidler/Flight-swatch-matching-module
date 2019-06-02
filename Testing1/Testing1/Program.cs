@@ -101,8 +101,7 @@ namespace Testing1
                 counter++;
             }
 
-            Console.WriteLine(flight.totalPlannedSwaths());
-
+            
         }
     }
 

@@ -6,6 +6,14 @@ namespace FlightPlanMatcher
     {
         static void Main(string[] args)
         {
+
+            KMLParser parser = new KMLParser();
+
+            parser.ParseKMLFile();
+
+            
+
+
             
         }
     }

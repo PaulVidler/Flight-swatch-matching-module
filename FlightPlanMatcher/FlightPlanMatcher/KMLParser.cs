@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text;
 using System.Xml;
+using System.Collections;
 
 namespace FlightPlanMatcher
 {
@@ -11,55 +12,108 @@ namespace FlightPlanMatcher
 
     class KMLParser
     {
-        public static void ParseKMLFile(string kmlFile)
+        //public static void ParseKMLFile(string kmlFile)
+        public void ParseKMLFile()
         {
+
             //Create the XmlDocument.
             XmlDocument doc = new XmlDocument();
-            doc.Load(kmlFile);
 
-            PlannedSwath plannedSwath = new PlannedSwath();
-            PlannedFlight plannedFlight = new PlannedFlight();
+            // KML variable to be passed into method
+            //doc.Load(kmlFile);
 
+
+            // hard coded KML location
+            doc.Load(@"C:\Users\Paul\Desktop\Program_for_Dean\Callide_1904_AMG_750.kml");
 
             XmlNodeList name = doc.GetElementsByTagName("name");
+            XmlNodeList coords = doc.GetElementsByTagName("coordinates");
+
+            ArrayList coordStrings = new ArrayList();
+            ArrayList runNumber = new ArrayList();
+            ArrayList startLat = new ArrayList();
+            ArrayList startLong = new ArrayList();
+            ArrayList endLat = new ArrayList();
+            ArrayList endLong = new ArrayList();
+            ArrayList altitude = new ArrayList();
+
+            string[] split;
+
+
+            // loop through XML list of "runs" and add to ordered list
             for (int i = 0; i < name.Count; i++)
             {
                 if (name[i].InnerText.Length > 0)
                 {
                     if (name[i].InnerText.Contains("Run"))
                     {
-
-                        Console.WriteLine(name[i].FirstChild.InnerText);
+                        runNumber.Add(name[i].FirstChild.InnerText);
                     }
 
                 }
             }
 
-            XmlNodeList coords = doc.GetElementsByTagName("coordinates");
+            // loop through XML list of "coords" and add to ordered list
             for (int i = 0; i < coords.Count; i++)
             {
                 if (coords[i].InnerText.Length > 0)
                 {
-                    Console.WriteLine(coords[i].FirstChild.InnerText);
+                    coordStrings.Add(coords[i].FirstChild.InnerText);
 
                 }
             }
 
-            string testCoords = coords[1].FirstChild.InnerText;
+            // loop through coords string and split to an array. Returns the array "split" of coords in particular order.
+            foreach (var item in coordStrings)
+            {
+                splitToArray(item.ToString());
+                startLong.Add(split[0]);
+                startLat.Add(split[1]);
+                altitude.Add(split[2]);
+                endLong.Add(split[3]);
+                endLat.Add(split[4]);
 
-            Console.WriteLine("New coords: " + testCoords.ToString());
+            }
 
-            string[] split = testCoords.Split(new Char[] { ',', ' ' },
+            // method to split coord strings into individual arrays (Used in loop that splits coord string into individual coords etc)
+            string[] splitToArray(string arrayString)
+            {
+                split = arrayString.Split(new Char[] { ',', ' ' },
                                  StringSplitOptions.RemoveEmptyEntries);
 
+                return split;
 
-            Console.WriteLine("Lat: " + split[0]);
-            Console.WriteLine("Long: " + split[1]);
-            Console.WriteLine("Alt: " + split[2]);
-            Console.WriteLine("EndLat: " + split[3]);
-            Console.WriteLine("endLong: " + split[4]);
-            Console.WriteLine("EndAlt: " + split[5]);
+            }
+
+
+            //new planned flight object used to add swaths to.
+            PlannedFlight flight = new PlannedFlight();
+
+            // counter for loop to add details to swaths
+            int counter = 0;
+
+            foreach (var i in runNumber)
+            {
+                PlannedSwath swath = new PlannedSwath();
+
+                swath.StartLat = Convert.ToDouble(startLat[counter]);
+                swath.StartLong = Convert.ToDouble(startLong[counter]);
+                swath.EndLat = Convert.ToDouble(endLat[counter]);
+                swath.EndLong = Convert.ToDouble(endLong[counter]);
+                swath.PlannedOrder = (string)i;
+                swath.PlannedAltitude = Convert.ToInt32(altitude[counter]);
+
+                flight.AddSwath(swath);
+
+                counter++;
+            }
+
 
         }
+
+
+
+
+    }
     }
 }
