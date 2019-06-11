@@ -4,15 +4,14 @@ using System.Text;
 
 namespace FlightPlanMatcher
 {
-    
-    class PlannedFlight
+    class ActualFlightProject
     {
-
         public string ProjectName { get; set; }
-        public List<PlannedSwath> PlannedSwathList = new List<PlannedSwath>();
+
+        public List<IActualFlight> ActualSwathList = new List<IActualFlight>();
 
 
-        public void AddSwath(PlannedSwath swath)
+        public void AddSwath(ActualSwath swath)
         {
             PlannedSwathList.Add(swath);
         }
@@ -23,5 +22,4 @@ namespace FlightPlanMatcher
         }
 
     }
-
 }

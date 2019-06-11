@@ -29,6 +29,7 @@ namespace FlightPlanMatcher
             XmlNodeList name = doc.GetElementsByTagName("name");
             XmlNodeList coords = doc.GetElementsByTagName("coordinates");
 
+            // yeah yeah, shouldn't have used an array list, I know....
             ArrayList coordStrings = new ArrayList();
             ArrayList runNumber = new ArrayList();
             ArrayList startLat = new ArrayList();
