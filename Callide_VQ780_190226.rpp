@@ -1,0 +1,2395 @@
+<?xml version="1.0"?>
+<document>
+<!-- *************************************************************************************** -->
+<!-- *                                                                                     * -->
+<!-- *                R i P R O C E S S   -   P R O J E C T   F I L E                      * -->
+<!-- *                ================ Version 1.4.2 ================                      * -->
+<!-- *                   (C) 2016  RIEGL LASER MEASUREMENT SYSTEMS                         * -->
+<!-- *                                                                                     * -->
+<!-- *************************************************************************************** -->
+  <header>
+    <docinfo>
+    <format data="RLMS.RiPROCESS.PROJECT"/>
+    <version data="1.4.2"/>
+    <remarks data="project file for airborne &amp; mobile laser scanning data processing software"/>
+    <creator data="RiACQUIRE ALS v2.3.4.175852 x86_64"/>
+    <created data="2019-02-26 11:01:49.747"/>
+    <modifier data="RiACQUIRE ALS v2.3.4.175852 x86_64"/>
+    <modified data="2019-02-26 13:48:31.605"/>
+    </docinfo>
+    <company>
+    <name data="RIEGL LASER MEASUREMENT SYSTEMS"/>
+    <address data="Riedenburgstrasse 48, 3580 Horn, AUSTRIA"/>
+    <phone data="+43(0)2982 4211"/>
+    <telefax data="+43(0)2982 4210"/>
+    <email data="office@riegl.com"/>
+    <website data="www.riegl.com"/>
+    <support data="support@riegl.com"/>
+    </company>
+  </header>
+  <!-- *************************************************************************************** -->
+  <!-- * CONTENTS                                                                            * -->
+  <!-- *************************************************************************************** -->
+  <content>
+    <object name="Callide_VQ780_190226" kind="project" states="expanded">
+      <fields>
+        <field name="coordinate-system-internal" data="WGS84" kind="string"/>
+        <field name="min-longitude" data="150.42294524" kind="double"/>
+        <field name="min-latitude" data="-24.39117319" kind="double"/>
+        <field name="max-longitude" data="150.68812423" kind="double"/>
+        <field name="max-latitude" data="-23.35013257" kind="double"/>
+        <field name="pop" data="-0.492806802 -0.870138757 0.000000000 0.000000000 -0.345215307 0.195514164 0.917932788 0.000000000 -0.798728895 0.452363522 -0.396735928 0.000000000 -5097088.405023831 2886757.790800570 -2514821.673816134 1.000000000 " kind="double[4][4]"/>
+        <field name="pop-acquisition" data="-0.492806802 -0.870138757 0.000000000 0.000000000 -0.345215307 0.195514164 0.917932788 0.000000000 -0.798728895 0.452363522 -0.396735928 0.000000000 -5097088.405023831 2886757.790800570 -2514821.673816134 1.000000000 " kind="double[4][4]"/>
+        <field name="min-altitude" data="1225.789" kind="double" unit="m"/>
+        <field name="max-altitude" data="1404.203" kind="double" unit="m"/>
+      </fields>
+      <objects>
+        <object name="SYSTEM" kind="SYSTEM" states="expanded">
+          <objects>
+            <object name="NAVIGATION DEVICES" kind="NAVDEVICES" states="expanded">
+              <objects>
+                <object name="INS-GPS 1" kind="navdevice" states="expanded">
+                  <fields>
+                    <field name="device-type" data="Applanix POS AV/LV/MV" kind="string"/>
+                    <field name="serial-number" data="9233" kind="string"/>
+                    <field name="protocol" data="Applanix POS" kind="string"/>
+                    <field name="body-system" data="1" kind="integer"/>
+                    <field name="order-of-rot" data="0" kind="integer"/>
+                    <field name="angle-conv" data="0" kind="integer"/>
+                    <field name="matrix-imu-body" data="1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000" kind="double[4][4]"/>
+                    <field name="offset-roll" data="0.000000" kind="double" unit="deg"/>
+                    <field name="offset-pitch" data="0.000000" kind="double" unit="deg"/>
+                    <field name="offset-yaw" data="0.000000" kind="double" unit="deg"/>
+                    <field name="offset-north" data="0.000000" kind="double" unit="m"/>
+                    <field name="offset-east" data="0.000000" kind="double" unit="m"/>
+                    <field name="offset-height" data="0.000000" kind="double" unit="m"/>
+                    <field name="time-offset" data="-0.000700" kind="double" unit="s"/>
+                    <field name="autostart-scanner" data="1" kind="boolean"/>
+                    <field name="autostart-scanner-time" data="0" kind="integer"/>
+                    <field name="autostop-scanner-time" data="0" kind="integer"/>
+                    <field name="autostart-scanner-work" data="1" kind="boolean"/>
+                    <field name="logging-options" data="" kind="strings"/>
+                  </fields>
+                </object>
+              </objects>
+            </object>
+            <object name="LASER CONFIGURATIONS" kind="LASCONFIGS" states="expanded">
+              <objects>
+                <object name="ground test" kind="lasconfig" states="expanded">
+                  <fields>
+                    <field name="range" data="0" kind="single" unit="m"/>
+                    <field name="speed" data="0" kind="single" unit="m/s"/>
+                    <field name="device-type" data="VQ-780i" kind="string"/>
+                    <field name="device-serial" data="S2222940" kind="string"/>
+                    <field name="device-channel" data="1" kind="integer"/>
+                    <field name="scan-mode" data="Line" kind="string"/>
+                    <field name="meas-prog" data="1000 kHz (1%)" kind="string"/>
+                    <field name="line-start" data="60" kind="single" unit="deg"/>
+                    <field name="line-start-2" data="-1" kind="single" unit="deg"/>
+                    <field name="line-start-3" data="-1" kind="single" unit="deg"/>
+                    <field name="line-increment" data="0.006" kind="single" unit="deg"/>
+                    <field name="line-stop" data="120" kind="single" unit="deg"/>
+                    <field name="line-stop-2" data="-1" kind="single" unit="deg"/>
+                    <field name="line-stop-3" data="-1" kind="single" unit="deg"/>
+                    <field name="frame-start" data="0" kind="single" unit="deg"/>
+                    <field name="frame-increment" data="0" kind="single" unit="deg"/>
+                    <field name="frame-stop" data="0" kind="single" unit="deg"/>
+                    <field name="sequence-count" data="0" kind="integer"/>
+                    <field name="halt-muliplier" data="1" kind="integer"/>
+                    <field name="msm" data="40" kind="integer"/>
+                    <field name="msm-line" data="-1" kind="integer"/>
+                    <field name="msm-meas" data="-1" kind="integer"/>
+                    <field name="msm-drec" data="-1" kind="integer"/>
+                    <field name="msm-wfm-all" data="-1" kind="integer"/>
+                    <field name="msm-wfm-mon" data="-1" kind="integer"/>
+                    <field name="msm-wfm-meas" data="-1" kind="integer"/>
+                    <field name="msm-wfm-drec" data="-1" kind="integer"/>
+                    <field name="wfm-filt-enable" data="" kind="string"/>
+                    <field name="wfm-filt-mask" data="0" kind="integer"/>
+                    <field name="wfm-filt-ampl-min" data="-1" kind="single"/>
+                    <field name="wfm-filt-ampl-max" data="-1" kind="single"/>
+                    <field name="wfm-filt-dev-min" data="-1" kind="integer"/>
+                    <field name="wfm-filt-dev-max" data="-1" kind="integer"/>
+                    <field name="wfm-filt-rng-min" data="-1" kind="single"/>
+                    <field name="wfm-filt-rng-max" data="-1" kind="single"/>
+                    <field name="mta-zone" data="1" kind="integer"/>
+                    <field name="nrs-level" data="0" kind="integer"/>
+                    <field name="prr-alternation" data="0" kind="integer"/>
+                    <field name="sensitivity-optimization" data="OFF" kind="string"/>
+                    <field name="near-range-enable" data="OFF" kind="string"/>
+                    <field name="filter-range-min" data="-1" kind="single"/>
+                    <field name="filter-range-max" data="-1" kind="single"/>
+                    <field name="filter-height-min" data="-1" kind="single"/>
+                    <field name="filter-height-max" data="-1" kind="single"/>
+                    <field name="laser-power" data="-1" kind="integer"/>
+                    <field name="laser-switch" data="-1" kind="integer"/>
+                    <field name="laser-beam-divergence" data="0" kind="integer"/>
+                    <field name="mta-zone-method" data="DEM" kind="string"/>
+                    <field name="meas-output-type" data="RANGE ONLY" kind="string"/>
+                    <field name="hemispherical-scan" data="" kind="string"/>
+                  </fields>
+                </object>
+                <object name="1500m 140kn 500 kHz (100%) 118lps Scanner 1" kind="lasconfig" states="expanded">
+                  <fields>
+                    <field name="range" data="1500" kind="single" unit="m"/>
+                    <field name="speed" data="72.0222" kind="single" unit="m/s"/>
+                    <field name="device-type" data="VQ-780i" kind="string"/>
+                    <field name="device-serial" data="S2222940" kind="string"/>
+                    <field name="device-channel" data="1" kind="integer"/>
+                    <field name="scan-mode" data="Line" kind="string"/>
+                    <field name="meas-prog" data="500 kHz (100%)" kind="string"/>
+                    <field name="line-start" data="60" kind="single" unit="deg"/>
+                    <field name="line-start-2" data="-1" kind="single" unit="deg"/>
+                    <field name="line-start-3" data="-1" kind="single" unit="deg"/>
+                    <field name="line-increment" data="0.0212" kind="single" unit="deg"/>
+                    <field name="line-stop" data="120" kind="single" unit="deg"/>
+                    <field name="line-stop-2" data="-1" kind="single" unit="deg"/>
+                    <field name="line-stop-3" data="-1" kind="single" unit="deg"/>
+                    <field name="frame-start" data="0" kind="single" unit="deg"/>
+                    <field name="frame-increment" data="0" kind="single" unit="deg"/>
+                    <field name="frame-stop" data="0" kind="single" unit="deg"/>
+                    <field name="sequence-count" data="0" kind="integer"/>
+                    <field name="halt-muliplier" data="1" kind="integer"/>
+                    <field name="msm" data="20" kind="integer"/>
+                    <field name="msm-line" data="-1" kind="integer"/>
+                    <field name="msm-meas" data="-1" kind="integer"/>
+                    <field name="msm-drec" data="-1" kind="integer"/>
+                    <field name="msm-wfm-all" data="-1" kind="integer"/>
+                    <field name="msm-wfm-mon" data="-1" kind="integer"/>
+                    <field name="msm-wfm-meas" data="-1" kind="integer"/>
+                    <field name="msm-wfm-drec" data="-1" kind="integer"/>
+                    <field name="wfm-filt-enable" data="" kind="string"/>
+                    <field name="wfm-filt-mask" data="-1" kind="integer"/>
+                    <field name="wfm-filt-ampl-min" data="-1" kind="single"/>
+                    <field name="wfm-filt-ampl-max" data="-1" kind="single"/>
+                    <field name="wfm-filt-dev-min" data="-1" kind="integer"/>
+                    <field name="wfm-filt-dev-max" data="-1" kind="integer"/>
+                    <field name="wfm-filt-rng-min" data="-1" kind="single"/>
+                    <field name="wfm-filt-rng-max" data="-1" kind="single"/>
+                    <field name="mta-zone" data="1" kind="integer"/>
+                    <field name="nrs-level" data="0" kind="integer"/>
+                    <field name="prr-alternation" data="0" kind="integer"/>
+                    <field name="sensitivity-optimization" data="OFF" kind="string"/>
+                    <field name="near-range-enable" data="OFF" kind="string"/>
+                    <field name="filter-range-min" data="-1" kind="single"/>
+                    <field name="filter-range-max" data="-1" kind="single"/>
+                    <field name="filter-height-min" data="-1" kind="single"/>
+                    <field name="filter-height-max" data="-1" kind="single"/>
+                    <field name="laser-power" data="-1" kind="integer"/>
+                    <field name="laser-switch" data="-1" kind="integer"/>
+                    <field name="laser-beam-divergence" data="0" kind="integer"/>
+                    <field name="mta-zone-method" data="DEM" kind="string"/>
+                    <field name="meas-output-type" data="RANGE ONLY" kind="string"/>
+                    <field name="hemispherical-scan" data="" kind="string"/>
+                  </fields>
+                </object>
+                <object name="1000m 135kn 1000 kHz (100%) 200lps Scanner 1" kind="lasconfig" states="expanded">
+                  <fields>
+                    <field name="range" data="1000" kind="single" unit="m"/>
+                    <field name="speed" data="69.45" kind="single" unit="m/s"/>
+                    <field name="device-type" data="VQ-780i" kind="string"/>
+                    <field name="device-serial" data="S2222940" kind="string"/>
+                    <field name="device-channel" data="1" kind="integer"/>
+                    <field name="scan-mode" data="Line" kind="string"/>
+                    <field name="meas-prog" data="1000 kHz (100%)" kind="string"/>
+                    <field name="line-start" data="60" kind="single" unit="deg"/>
+                    <field name="line-start-2" data="-1" kind="single" unit="deg"/>
+                    <field name="line-start-3" data="-1" kind="single" unit="deg"/>
+                    <field name="line-increment" data="0.018" kind="single" unit="deg"/>
+                    <field name="line-stop" data="120" kind="single" unit="deg"/>
+                    <field name="line-stop-2" data="-1" kind="single" unit="deg"/>
+                    <field name="line-stop-3" data="-1" kind="single" unit="deg"/>
+                    <field name="frame-start" data="0" kind="single" unit="deg"/>
+                    <field name="frame-increment" data="0" kind="single" unit="deg"/>
+                    <field name="frame-stop" data="0" kind="single" unit="deg"/>
+                    <field name="sequence-count" data="0" kind="integer"/>
+                    <field name="halt-muliplier" data="1" kind="integer"/>
+                    <field name="msm" data="40" kind="integer"/>
+                    <field name="msm-line" data="-1" kind="integer"/>
+                    <field name="msm-meas" data="-1" kind="integer"/>
+                    <field name="msm-drec" data="-1" kind="integer"/>
+                    <field name="msm-wfm-all" data="-1" kind="integer"/>
+                    <field name="msm-wfm-mon" data="-1" kind="integer"/>
+                    <field name="msm-wfm-meas" data="-1" kind="integer"/>
+                    <field name="msm-wfm-drec" data="-1" kind="integer"/>
+                    <field name="wfm-filt-enable" data="" kind="string"/>
+                    <field name="wfm-filt-mask" data="-1" kind="integer"/>
+                    <field name="wfm-filt-ampl-min" data="-1" kind="single"/>
+                    <field name="wfm-filt-ampl-max" data="-1" kind="single"/>
+                    <field name="wfm-filt-dev-min" data="-1" kind="integer"/>
+                    <field name="wfm-filt-dev-max" data="-1" kind="integer"/>
+                    <field name="wfm-filt-rng-min" data="-1" kind="single"/>
+                    <field name="wfm-filt-rng-max" data="-1" kind="single"/>
+                    <field name="mta-zone" data="1" kind="integer"/>
+                    <field name="nrs-level" data="0" kind="integer"/>
+                    <field name="prr-alternation" data="0" kind="integer"/>
+                    <field name="sensitivity-optimization" data="OFF" kind="string"/>
+                    <field name="near-range-enable" data="OFF" kind="string"/>
+                    <field name="filter-range-min" data="-1" kind="single"/>
+                    <field name="filter-range-max" data="-1" kind="single"/>
+                    <field name="filter-height-min" data="-1" kind="single"/>
+                    <field name="filter-height-max" data="-1" kind="single"/>
+                    <field name="laser-power" data="-1" kind="integer"/>
+                    <field name="laser-switch" data="-1" kind="integer"/>
+                    <field name="laser-beam-divergence" data="0" kind="integer"/>
+                    <field name="mta-zone-method" data="DEM" kind="string"/>
+                    <field name="meas-output-type" data="RANGE ONLY" kind="string"/>
+                    <field name="hemispherical-scan" data="" kind="string"/>
+                  </fields>
+                </object>
+                <object name="750m 135kn 1000 kHz (50%) 230lps Scanner 1" kind="lasconfig" states="expanded">
+                  <fields>
+                    <field name="range" data="750" kind="single" unit="m"/>
+                    <field name="speed" data="69.45" kind="single" unit="m/s"/>
+                    <field name="device-type" data="VQ-780i" kind="string"/>
+                    <field name="device-serial" data="S2222940" kind="string"/>
+                    <field name="device-channel" data="1" kind="integer"/>
+                    <field name="scan-mode" data="Line" kind="string"/>
+                    <field name="meas-prog" data="1000 kHz (50%)" kind="string"/>
+                    <field name="line-start" data="60" kind="single" unit="deg"/>
+                    <field name="line-start-2" data="-1" kind="single" unit="deg"/>
+                    <field name="line-start-3" data="-1" kind="single" unit="deg"/>
+                    <field name="line-increment" data="0.0207" kind="single" unit="deg"/>
+                    <field name="line-stop" data="120" kind="single" unit="deg"/>
+                    <field name="line-stop-2" data="-1" kind="single" unit="deg"/>
+                    <field name="line-stop-3" data="-1" kind="single" unit="deg"/>
+                    <field name="frame-start" data="0" kind="single" unit="deg"/>
+                    <field name="frame-increment" data="0" kind="single" unit="deg"/>
+                    <field name="frame-stop" data="0" kind="single" unit="deg"/>
+                    <field name="sequence-count" data="0" kind="integer"/>
+                    <field name="halt-muliplier" data="1" kind="integer"/>
+                    <field name="msm" data="40" kind="integer"/>
+                    <field name="msm-line" data="-1" kind="integer"/>
+                    <field name="msm-meas" data="-1" kind="integer"/>
+                    <field name="msm-drec" data="-1" kind="integer"/>
+                    <field name="msm-wfm-all" data="-1" kind="integer"/>
+                    <field name="msm-wfm-mon" data="-1" kind="integer"/>
+                    <field name="msm-wfm-meas" data="-1" kind="integer"/>
+                    <field name="msm-wfm-drec" data="-1" kind="integer"/>
+                    <field name="wfm-filt-enable" data="" kind="string"/>
+                    <field name="wfm-filt-mask" data="-1" kind="integer"/>
+                    <field name="wfm-filt-ampl-min" data="-1" kind="single"/>
+                    <field name="wfm-filt-ampl-max" data="-1" kind="single"/>
+                    <field name="wfm-filt-dev-min" data="-1" kind="integer"/>
+                    <field name="wfm-filt-dev-max" data="-1" kind="integer"/>
+                    <field name="wfm-filt-rng-min" data="-1" kind="single"/>
+                    <field name="wfm-filt-rng-max" data="-1" kind="single"/>
+                    <field name="mta-zone" data="1" kind="integer"/>
+                    <field name="nrs-level" data="0" kind="integer"/>
+                    <field name="prr-alternation" data="0" kind="integer"/>
+                    <field name="sensitivity-optimization" data="OFF" kind="string"/>
+                    <field name="near-range-enable" data="OFF" kind="string"/>
+                    <field name="filter-range-min" data="-1" kind="single"/>
+                    <field name="filter-range-max" data="-1" kind="single"/>
+                    <field name="filter-height-min" data="-1" kind="single"/>
+                    <field name="filter-height-max" data="-1" kind="single"/>
+                    <field name="laser-power" data="-1" kind="integer"/>
+                    <field name="laser-switch" data="-1" kind="integer"/>
+                    <field name="laser-beam-divergence" data="0" kind="integer"/>
+                    <field name="mta-zone-method" data="DEM" kind="string"/>
+                    <field name="meas-output-type" data="RANGE ONLY" kind="string"/>
+                    <field name="hemispherical-scan" data="" kind="string"/>
+                  </fields>
+                </object>
+              </objects>
+            </object>
+            <object name="LASER DEVICES" kind="LASDEVICES" states="expanded">
+              <objects>
+                <object name="Scanner 1" kind="lasdevice" states="expanded">
+                  <links>
+                    <link name="navdevice" node="/*[0]/*[0]/*[0]/*[0]" kind="navdevice"/>
+                  </links>
+                  <fields>
+                    <field name="device-type" data="VQ-780i" kind="string"/>
+                    <field name="serial-number" data="S2222940" kind="string"/>
+                    <field name="matrix-socs-imu" data="0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 -0.012600000000000 0.010200000000000 0.261000000000000 1.000000000000000" kind="double[4][4]"/>
+                    <field name="calib-offset-roll" data="0.012900" kind="double" unit="deg"/>
+                    <field name="calib-offset-pitch" data="-0.049320" kind="double" unit="deg"/>
+                    <field name="calib-offset-yaw" data="-0.203060" kind="double" unit="deg"/>
+                    <field name="channel-number" data="1" kind="integer"/>
+                    <field name="time-offset-mon" data="0.000000" kind="double" unit="s"/>
+                    <field name="acquisition-method" data="4" kind="integer"/>
+                    <field name="acquisition-host" data="" kind="string"/>
+                    <field name="acquisition-port" data="20003" kind="integer"/>
+                    <field name="acquisition-drive" data="AUTO" kind="string"/>
+                    <field name="acquisition-stor-media" data="USB" kind="string"/>
+                    <field name="acquisition-arguments" data="monlas" kind="string"/>
+                    <field name="acquisition-folder" data="C:/01_flight data" kind="string"/>
+                    <field name="acquisition-filling-visible" data="1" kind="boolean"/>
+                    <field name="acquisition-crc-enabled" data="1" kind="boolean"/>
+                  </fields>
+                </object>
+              </objects>
+            </object>
+            <object name="CAMERA CONFIGURATIONS" kind="CAMCONFIGS" states="expanded">
+              <objects>
+                <object name="POSTrack" kind="camconfig" states="expanded">
+                  <fields>
+                    <field name="type" data="RIEGL-CS6" kind="string"/>
+                    <field name="method" data="External High" kind="string"/>
+                    <field name="preview-interval" data="1" kind="single" unit="s"/>
+                    <field name="interval" data="1" kind="single" unit="s"/>
+                    <field name="distance" data="1" kind="single" unit="m"/>
+                    <field name="overlap" data="30" kind="integer"/>
+                    <field name="option-auto-logging" data="1" kind="boolean"/>
+                    <field name="option-trigger-shutter" data="0" kind="boolean"/>
+                  </fields>
+                </object>
+              </objects>
+            </object>
+            <object name="CAMERA DEVICES" kind="CAMDEVICES" states="expanded">
+              <objects>
+                <object name="Camera left" kind="camdevice" states="expanded">
+                  <links>
+                    <link name="navdevice" node="/*[0]/*[0]/*[0]/*[0]" kind="navdevice"/>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                  </links>
+                  <fields>
+                    <field name="device-type" data="RIEGL-CS6" kind="string"/>
+                    <field name="serial-number" data="YC030228" kind="string"/>
+                    <field name="matrix-cmcs-imu" data="0.000000000000000 1.000000000000000 0.000000000000000 0.000000000000000 -1.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 0.000000000000000 1.000000000000000 0.000000000000000 0.201400000000000 -0.059800000000000 0.431710000000000 1.000000000000000" kind="double[4][4]"/>
+                    <field name="calib-offset-roll" data="-0.068200" kind="double" unit="deg"/>
+                    <field name="calib-offset-pitch" data="0.009540" kind="double" unit="deg"/>
+                    <field name="calib-offset-yaw" data="-0.556300" kind="double" unit="deg"/>
+                    <field name="dx" data="0.0000046000000000" kind="double"/>
+                    <field name="dy" data="0.0000046000000000" kind="double"/>
+                    <field name="nx" data="11608" kind="integer"/>
+                    <field name="ny" data="8708" kind="integer"/>
+                    <field name="fx" data="11184.369" kind="double"/>
+                    <field name="fy" data="11184.370" kind="double"/>
+                    <field name="cx" data="5795.652" kind="double"/>
+                    <field name="cy" data="4353.984" kind="double"/>
+                    <field name="k1" data="-0.0397600000000000" kind="double"/>
+                    <field name="k2" data="0.0396300000000000" kind="double"/>
+                    <field name="k3" data="-0.0209600000000000" kind="double"/>
+                    <field name="k4" data="0.0063450000000000" kind="double"/>
+                    <field name="p1" data="0.0001903000000000" kind="double"/>
+                    <field name="p2" data="-0.0000413700000000" kind="double"/>
+                    <field name="version" data="0" kind="integer"/>
+                    <field name="time-offset-mon" data="0.000000" kind="double"/>
+                    <field name="pulse-duration" data="26.04µs" kind="string"/>
+                    <field name="event-input" data="" kind="string"/>
+                    <field name="camera-image-type" data="1" kind="integer"/>
+                    <field name="logging-options" data="thumbnail,histogram" kind="strings"/>
+                    <field name="time-extern-delay" data="0.000" kind="double"/>
+                    <field name="time-intern-accuracy" data="0.000" kind="double"/>
+                  </fields>
+                </object>
+              </objects>
+            </object>
+          </objects>
+        </object>
+        <object name="ATMOSPHERIC CONDITIONS" kind="ACLDATA" states="expanded">
+          <objects>
+            <object name="Atmospheric Conditions" kind="acl-file" states="expanded">
+              <files>
+                <file id="001" item="acl-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\06_ATMOS\" name="Callide_VQ780_190226" ext=".acl"/>
+              </files>
+            </object>
+          </objects>
+        </object>
+        <object name="POS DATA" kind="POSDATA" states="expanded">
+          <objects>
+            <object name="190226_010105" kind="pof-file" states="expanded">
+              <links>
+                <link name="navdevice" node="/*[0]/*[0]/*[0]/*[0]" kind="navdevice"/>
+              </links>
+              <files>
+                <file id="002" item="mon-file" opts="auto-rename auto-delete" path=".\02_INS-GPS_RAW\01_MON\INS-GPS_1\" name="190226_010105_INS-GPS_1" ext=".mon.igs"/>
+              </files>
+              <fields>
+                <field name="time-start" data="2019-02-26 01:01:05.015" kind="datetime"/>
+                <field name="longitude-start" data="150.47476788" kind="double" unit="deg"/>
+                <field name="latitude-start" data="-23.37428280" kind="double" unit="deg"/>
+                <field name="altitude-start" data="8.938" kind="single" unit="m"/>
+                <field name="roll-start" data="0.411" kind="single" unit="deg"/>
+                <field name="pitch-start" data="0.310" kind="single" unit="deg"/>
+                <field name="yaw-start" data="161.297" kind="single" unit="deg"/>
+                <field name="ground-speed-start" data="0.004" kind="single" unit="m/s"/>
+                <field name="distance-start" data="0.789" kind="single" unit="m"/>
+                <field name="size" data="30315912" kind="integer" unit="bytes"/>
+                <field name="mon-pof-size" data="0" kind="integer" unit="bytes"/>
+                <field name="time-end" data="2019-02-26 03:45:42.211" kind="datetime"/>
+                <field name="longitude-end" data="150.47615973" kind="double" unit="deg"/>
+                <field name="latitude-end" data="-23.37325522" kind="double" unit="deg"/>
+                <field name="altitude-end" data="10.75691986" kind="single" unit="m"/>
+                <field name="roll-end" data="0.944" kind="single" unit="deg"/>
+                <field name="pitch-end" data="-0.623" kind="single" unit="deg"/>
+                <field name="yaw-end" data="142.872" kind="single" unit="deg"/>
+                <field name="ground-speed-end" data="0.009" kind="single" unit="m/s"/>
+                <field name="distance-end" data="573928.625" kind="single" unit="m"/>
+                <field name="time-movement-total" data="9013.45" kind="double" unit="s"/>
+                <field name="time-standstill-total" data="863.71" kind="double" unit="s"/>
+                <field name="distance-total" data="573927.84" kind="double" unit="m"/>
+              </fields>
+            </object>
+          </objects>
+        </object>
+        <object name="RECORDS" kind="RECORDS" states="expanded">
+          <objects>
+            <object name="Record001_Line19" kind="record">
+              <objects>
+                <object name="190226_014610_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="19" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_014610_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="004" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_014610_Scanner_1" ext=".rxp"/>
+                        <file id="005" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_014610_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 01:46:10.784" kind="datetime"/>
+                        <field name="longitude-start" data="150.61961597" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.35362398" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1339.586" kind="single" unit="m"/>
+                        <field name="roll-start" data="1.221" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="7.526" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="7.845" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="59.321" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="121886.594" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="2863792128" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 01:49:07.845" kind="datetime"/>
+                        <field name="longitude-end" data="150.62378047" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.25040772" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1342.09387207" kind="single" unit="m"/>
+                        <field name="roll-end" data="0.679" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="4.314" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="7.857" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="64.492" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="133330.578" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record002_Line15" kind="record">
+              <objects>
+                <object name="190226_015157_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="15" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_015157_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="008" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_015157_Scanner_1" ext=".rxp"/>
+                        <file id="009" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_015157_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 01:51:57.670" kind="datetime"/>
+                        <field name="longitude-start" data="150.60440919" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.25193842" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1383.042" kind="single" unit="m"/>
+                        <field name="roll-start" data="-1.045" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="5.135" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="109.511" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="59.856" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="143804.250" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="1485176832" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 01:53:23.320" kind="datetime"/>
+                        <field name="longitude-end" data="150.65197192" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.26747398" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1393.59082031" kind="single" unit="m"/>
+                        <field name="roll-end" data="0.962" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="3.526" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="107.345" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="60.903" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="148932.984" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record003_Line16" kind="record">
+              <objects>
+                <object name="190226_015549_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="16" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_015549_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="012" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_015549_Scanner_1" ext=".rxp"/>
+                        <file id="013" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_015549_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 01:55:49.027" kind="datetime"/>
+                        <field name="longitude-start" data="150.65424822" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.27617042" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1396.387" kind="single" unit="m"/>
+                        <field name="roll-start" data="2.203" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="-1.401" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="293.381" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="69.027" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="158391.547" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="1569456128" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 01:57:29.565" kind="datetime"/>
+                        <field name="longitude-end" data="150.59240695" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.25589503" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1389.34326172" kind="single" unit="m"/>
+                        <field name="roll-end" data="0.012" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="4.646" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="291.554" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="62.471" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="165061.781" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record004_Line17" kind="record">
+              <objects>
+                <object name="190226_020001_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="17" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_020001_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="016" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_020001_Scanner_1" ext=".rxp"/>
+                        <file id="017" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_020001_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:00:01.388" kind="datetime"/>
+                        <field name="longitude-start" data="150.58218679" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.26026776" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1389.198" kind="single" unit="m"/>
+                        <field name="roll-start" data="-0.279" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="1.623" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="109.077" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="69.657" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="175391.125" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="1802371072" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:01:54.327" kind="datetime"/>
+                        <field name="longitude-end" data="150.64649196" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.28124253" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1381.58862305" kind="single" unit="m"/>
+                        <field name="roll-end" data="2.214" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="2.702" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="109.147" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="59.802" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="182323.891" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record005_Line18" kind="record">
+              <objects>
+                <object name="190226_020410_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="18" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_020410_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="020" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_020410_Scanner_1" ext=".rxp"/>
+                        <file id="021" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_020410_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:04:10.748" kind="datetime"/>
+                        <field name="longitude-start" data="150.64409550" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.28827739" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1374.197" kind="single" unit="m"/>
+                        <field name="roll-start" data="-0.401" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="2.767" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="290.918" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="67.907" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="191175.312" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="1583480832" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:05:43.201" kind="datetime"/>
+                        <field name="longitude-end" data="150.58691572" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.26962112" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1389.92810059" kind="single" unit="m"/>
+                        <field name="roll-end" data="-1.483" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="2.896" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="289.719" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="67.988" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="197339.328" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record006_Line6" kind="record">
+              <objects>
+                <object name="190226_020709_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="6" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_020709_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="022" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_020709_Scanner_1" ext=".rxp"/>
+                        <file id="023" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_020709_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:07:09.592" kind="datetime"/>
+                        <field name="longitude-start" data="150.54165923" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.25290379" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1283.934" kind="single" unit="m"/>
+                        <field name="roll-start" data="1.138" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="4.132" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="344.742" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="65.310" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="203281.500" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="2114060288" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:09:21.936" kind="datetime"/>
+                        <field name="longitude-end" data="150.51158661" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.17894258" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1282.50231934" kind="single" unit="m"/>
+                        <field name="roll-end" data="-1.128" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="3.383" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="341.846" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="68.247" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="212027.156" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record007_Line7" kind="record">
+              <objects>
+                <object name="190226_021116_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="7" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_021116_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="028" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_021116_Scanner_1" ext=".rxp"/>
+                        <file id="029" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_021116_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:11:16.353" kind="datetime"/>
+                        <field name="longitude-start" data="150.52487272" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.18502294" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1268.137" kind="single" unit="m"/>
+                        <field name="roll-start" data="3.450" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="-0.669" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="214.160" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="67.544" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="219171.672" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="1884815360" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:13:22.096" kind="datetime"/>
+                        <field name="longitude-end" data="150.48069374" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.24581490" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1258.15673828" kind="single" unit="m"/>
+                        <field name="roll-end" data="2.583" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="1.517" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="209.997" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="68.104" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="227266.406" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record008_Line1" kind="record">
+              <objects>
+                <object name="190226_021726_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="1" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_021726_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="032" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_021726_Scanner_1" ext=".rxp"/>
+                        <file id="033" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_021726_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:17:26.243" kind="datetime"/>
+                        <field name="longitude-start" data="150.47490459" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.19349605" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1257.791" kind="single" unit="m"/>
+                        <field name="roll-start" data="3.490" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="0.023" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="157.172" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="67.356" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="243847.953" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="1747845120" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:19:18.383" kind="datetime"/>
+                        <field name="longitude-end" data="150.49811147" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.25076476" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1242.10559082" kind="single" unit="m"/>
+                        <field name="roll-end" data="-2.871" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="3.638" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="154.864" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="62.172" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="250616.688" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record009_Line5" kind="record">
+              <objects>
+                <object name="190226_022122_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="5" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_022122_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="036" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_022122_Scanner_1" ext=".rxp"/>
+                        <file id="037" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_022122_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:21:22.400" kind="datetime"/>
+                        <field name="longitude-start" data="150.53426201" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.25566695" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1301.559" kind="single" unit="m"/>
+                        <field name="roll-start" data="1.988" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="0.488" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="342.329" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="69.844" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="258784.828" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="1972895744" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:23:34.552" kind="datetime"/>
+                        <field name="longitude-end" data="150.50408383" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.18156982" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1297.08972168" kind="single" unit="m"/>
+                        <field name="roll-end" data="5.568" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="2.928" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="343.069" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="65.987" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="267548.875" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record010_Line2" kind="record">
+              <objects>
+                <object name="190226_022532_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="2" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_022532_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="040" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_022532_Scanner_1" ext=".rxp"/>
+                        <file id="041" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_022532_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:25:32.969" kind="datetime"/>
+                        <field name="longitude-start" data="150.48171500" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.18899159" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1245.086" kind="single" unit="m"/>
+                        <field name="roll-start" data="-0.513" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="3.395" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="155.343" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="63.376" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="275772.375" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="1898184704" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:27:36.508" kind="datetime"/>
+                        <field name="longitude-end" data="150.50805807" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.25449706" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1245.84985352" kind="single" unit="m"/>
+                        <field name="roll-end" data="1.412" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="3.188" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="155.851" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="61.409" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="283507.969" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record011_Line3" kind="record">
+              <objects>
+                <object name="190226_022956_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="3" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_022956_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="044" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_022956_Scanner_1" ext=".rxp"/>
+                        <file id="045" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_022956_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:29:56.526" kind="datetime"/>
+                        <field name="longitude-start" data="150.51745755" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.25624654" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1245.338" kind="single" unit="m"/>
+                        <field name="roll-start" data="1.185" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="4.028" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="343.165" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="61.771" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="292603.094" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="1855848448" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:32:01.287" kind="datetime"/>
+                        <field name="longitude-end" data="150.48910081" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.18658139" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1247.15625000" kind="single" unit="m"/>
+                        <field name="roll-end" data="4.228" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="0.625" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="342.032" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="64.834" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="300841.562" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record012_Line4" kind="record">
+              <objects>
+                <object name="190226_023435_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="4" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_023435_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="048" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_023435_Scanner_1" ext=".rxp"/>
+                        <file id="049" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_023435_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:34:35.294" kind="datetime"/>
+                        <field name="longitude-start" data="150.49569094" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.18180708" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1257.616" kind="single" unit="m"/>
+                        <field name="roll-start" data="1.136" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="4.692" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="154.266" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="62.570" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="310781.969" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="1910767616" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:36:46.170" kind="datetime"/>
+                        <field name="longitude-end" data="150.52497828" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.25354123" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1272.40332031" kind="single" unit="m"/>
+                        <field name="roll-end" data="4.266" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="3.407" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="158.165" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="58.867" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="319268.312" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record013_Line8" kind="record">
+              <objects>
+                <object name="190226_023752_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="8" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_023752_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="050" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_023752_Scanner_1" ext=".rxp"/>
+                        <file id="051" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_023752_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:37:52.942" kind="datetime"/>
+                        <field name="longitude-start" data="150.55192084" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.27552183" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1358.597" kind="single" unit="m"/>
+                        <field name="roll-start" data="-1.083" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="5.060" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="107.874" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="54.663" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="323044.031" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="3488481280" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:41:18.306" kind="datetime"/>
+                        <field name="longitude-end" data="150.66627143" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.31174636" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1355.22253418" kind="single" unit="m"/>
+                        <field name="roll-end" data="0.208" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="4.316" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="109.405" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="59.822" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="335333.469" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record014_Line11" kind="record">
+              <objects>
+                <object name="190226_024300_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="11" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_024300_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="056" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_024300_Scanner_1" ext=".rxp"/>
+                        <file id="057" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_024300_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:43:00.928" kind="datetime"/>
+                        <field name="longitude-start" data="150.66332165" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.33400099" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1359.358" kind="single" unit="m"/>
+                        <field name="roll-start" data="-1.959" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="4.504" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="290.466" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="63.002" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="341737.969" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="2962227200" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:46:18.782" kind="datetime"/>
+                        <field name="longitude-end" data="150.54395405" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.29628627" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1358.30664062" kind="single" unit="m"/>
+                        <field name="roll-end" data="1.547" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="3.258" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="290.978" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="66.468" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="354558.469" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record015_Line12" kind="record">
+              <objects>
+                <object name="190226_024848_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="12" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_024848_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="060" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_024848_Scanner_1" ext=".rxp"/>
+                        <file id="061" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_024848_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:48:48.802" kind="datetime"/>
+                        <field name="longitude-start" data="150.54598905" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.30463128" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1363.266" kind="single" unit="m"/>
+                        <field name="roll-start" data="2.375" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="3.327" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="108.508" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="57.901" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="363481.000" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="2721972224" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:51:49.063" kind="datetime"/>
+                        <field name="longitude-end" data="150.65136857" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.33787240" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1351.97424316" kind="single" unit="m"/>
+                        <field name="roll-end" data="2.852" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="4.459" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="109.897" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="66.144" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="374797.844" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record016_Line9" kind="record">
+              <objects>
+                <object name="190226_025345_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="9" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_025345_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="064" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_025345_Scanner_1" ext=".rxp"/>
+                        <file id="065" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_025345_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:53:45.275" kind="datetime"/>
+                        <field name="longitude-start" data="150.66862334" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.32020021" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1368.750" kind="single" unit="m"/>
+                        <field name="roll-start" data="-0.751" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="4.815" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="288.199" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="64.616" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="382432.656" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="2971795456" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 02:57:03.439" kind="datetime"/>
+                        <field name="longitude-end" data="150.54676166" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.28179802" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1358.07263184" kind="single" unit="m"/>
+                        <field name="roll-end" data="0.830" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="4.853" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="288.732" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="63.721" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="395518.594" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record017_Line10" kind="record">
+              <objects>
+                <object name="190226_025921_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="10" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_025921_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="068" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_025921_Scanner_1" ext=".rxp"/>
+                        <file id="069" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_025921_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 02:59:21.257" kind="datetime"/>
+                        <field name="longitude-start" data="150.54181121" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.28786824" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1357.971" kind="single" unit="m"/>
+                        <field name="roll-start" data="4.730" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="1.795" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="109.950" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="60.637" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="404010.219" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="3102736384" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 03:02:49.549" kind="datetime"/>
+                        <field name="longitude-end" data="150.66578806" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.32712501" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1364.29345703" kind="single" unit="m"/>
+                        <field name="roll-end" data="0.560" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="4.267" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="106.926" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="65.216" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="417329.188" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record018_Line13" kind="record">
+              <objects>
+                <object name="190226_030419_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="13" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_030419_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="072" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_030419_Scanner_1" ext=".rxp"/>
+                        <file id="073" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_030419_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 03:04:19.230" kind="datetime"/>
+                        <field name="longitude-start" data="150.64180709" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.34263019" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1261.398" kind="single" unit="m"/>
+                        <field name="roll-start" data="4.543" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="4.961" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="293.064" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="61.215" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="423160.562" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="1419378688" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 03:05:56.173" kind="datetime"/>
+                        <field name="longitude-end" data="150.58523743" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.32488144" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1280.13134766" kind="single" unit="m"/>
+                        <field name="roll-end" data="2.609" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="7.725" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="290.809" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="62.844" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="429229.656" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+            <object name="Record019_Line14" kind="record">
+              <objects>
+                <object name="190226_030829_Scanner_1" kind="lasdata">
+                  <links>
+                    <link name="lasdevice" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                    <link name="pof-file-original" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="file-source-id" data="14" kind="integer"/>
+                  </fields>
+                  <objects>
+                    <object name="190226_030829_Scanner_1" kind="rxp-file" states="expected expanded">
+                      <links>
+                        <link name="lasconfig" node="/*[0]/*[0]/*[1]/*[2]" kind="lasconfig"/>
+                      </links>
+                      <files>
+                        <file id="076" item="rxp-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_030829_Scanner_1" ext=".rxp"/>
+                        <file id="077" item="zif-file" opts="auto-rename auto-delete" path=".\03_RIEGL_RAW\02_RXP\Scanner_1\" name="190226_030829_Scanner_1" ext=".zif"/>
+                      </files>
+                      <fields>
+                        <field name="segment-count" data="1" kind="integer"/>
+                        <field name="time-start" data="2019-02-26 03:08:29.891" kind="datetime"/>
+                        <field name="longitude-start" data="150.60139096" kind="double" unit="deg"/>
+                        <field name="latitude-start" data="-24.33656644" kind="double" unit="deg"/>
+                        <field name="altitude-start" data="1247.001" kind="single" unit="m"/>
+                        <field name="roll-start" data="-2.138" kind="single" unit="deg"/>
+                        <field name="pitch-start" data="3.401" kind="single" unit="deg"/>
+                        <field name="yaw-start" data="108.200" kind="single" unit="deg"/>
+                        <field name="ground-speed-start" data="63.807" kind="single" unit="m/s"/>
+                        <field name="distance-start" data="439186.531" kind="single" unit="m"/>
+                        <field name="status" data="-1" kind="integer"/>
+                        <field name="size" data="732692480" kind="integer" unit="bytes"/>
+                        <field name="time-end" data="2019-02-26 03:09:23.421" kind="datetime"/>
+                        <field name="longitude-end" data="150.63261160" kind="double" unit="deg"/>
+                        <field name="latitude-end" data="-24.34626564" kind="double" unit="deg"/>
+                        <field name="altitude-end" data="1253.96582031" kind="single" unit="m"/>
+                        <field name="roll-end" data="0.097" kind="single" unit="deg"/>
+                        <field name="pitch-end" data="3.527" kind="single" unit="deg"/>
+                        <field name="yaw-end" data="107.637" kind="single" unit="deg"/>
+                        <field name="ground-speed-end" data="64.799" kind="single" unit="m/s"/>
+                        <field name="distance-end" data="442532.094" kind="single" unit="m"/>
+                      </fields>
+                    </object>
+                  </objects>
+                </object>
+              </objects>
+            </object>
+          </objects>
+        </object>
+        <object name="AREA OBJECTS" kind="AREAOBJECTS" states="expanded">
+          <objects>
+            <object name=" run 1" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="127.107201 -91049.562500 585.9" kind="double[3]"/>
+                <field name="point1" data="2370.945312 -97074.195312 496.2" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 2" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="801.410339 -90532.835938 593.2" kind="double[3]"/>
+                <field name="point1" data="3391.374756 -97489.609375 489.3" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 3" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="1477.676880 -90018.132812 600.4" kind="double[3]"/>
+                <field name="point1" data="4239.262695 -97438.968750 489.6" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 4" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="2236.764160 -89735.132812 621.2" kind="double[3]"/>
+                <field name="point1" data="5086.167480 -97388.570312 506.8" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 5" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="2996.845459 -89453.312500 653.9" kind="double[3]"/>
+                <field name="point1" data="5934.092773 -97338.375000 535.8" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 6" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="3756.937744 -89170.078125 657.5" kind="double[3]"/>
+                <field name="point1" data="6694.212402 -97055.171875 539.4" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 7" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="613.212524 -96512.664062 519.1" kind="double[3]"/>
+                <field name="point1" data="4898.265625 -90089.117188 611.7" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 8" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="8082.116699 -99933.898438 554.1" kind="double[3]"/>
+                <field name="point1" data="19409.542969 -103847.703125 466.9" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 9" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="7347.201660 -100535.515625 545.5" kind="double[3]"/>
+                <field name="point1" data="19381.169922 -104694.140625 453.1" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 10" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="7083.320801 -101300.640625 533.6" kind="double[3]"/>
+                <field name="point1" data="19352.755859 -105542.570312 439.1" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 11" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="7053.943359 -102148.000000 520.1" kind="double[3]"/>
+                <field name="point1" data="18853.310547 -106225.484375 429.2" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 12" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="7495.575684 -103159.882812 503.2" kind="double[3]"/>
+                <field name="point1" data="17882.826172 -106743.859375 423.3" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 13" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="11246.420898 -105309.250000 377.4" kind="double[3]"/>
+                <field name="point1" data="16677.566406 -107180.539062 334.2" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 14" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="13146.235352 -106694.179688 328.6" kind="double[3]"/>
+                <field name="point1" data="15985.674805 -107664.578125 305.7" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 15" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="13438.513672 -97329.546875 615.6" kind="double[3]"/>
+                <field name="point1" data="17945.484375 -98944.945312 579.5" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 16" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="11975.343750 -97667.062500 613.3" kind="double[3]"/>
+                <field name="point1" data="17911.083984 -99794.281250 566.3" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 17" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="11226.602539 -98258.460938 605.5" kind="double[3]"/>
+                <field name="point1" data="17399.779297 -100471.000000 557.0" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 18" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="11430.704102 -99191.078125 590.6" kind="double[3]"/>
+                <field name="point1" data="16889.472656 -101147.726562 547.7" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+            <object name=" run 19" kind="area-object" states="expanded">
+              <fields>
+                <field name="point0" data="14729.986328 -108209.437500 399.5" kind="double[3]"/>
+                <field name="point1" data="15139.694336 -97097.757812 578.3" kind="double[3]"/>
+                <field name="autostart-scanner" data="0" kind="boolean"/>
+                <field name="autostart-scanner-time" data="2" kind="integer"/>
+                <field name="autostop-scanner-time" data="2" kind="integer"/>
+                <field name="autotoggle-scanner-time" data="2" kind="integer"/>
+                <field name="autostart-scanner-work" data="0" kind="boolean"/>
+              </fields>
+            </object>
+          </objects>
+        </object>
+        <object name="ROUTE OBJECTS" kind="ROUTEOBJECTS" states="expanded">
+        </object>
+        <object name="PLACEMARK OBJECTS" kind="PLACEMARKOBJECTS" states="expanded">
+        </object>
+        <object name="GEOIMAGE OBJECTS" kind="GEOIMAGEOBJECTS" states="expanded">
+        </object>
+        <object name="CONTROL OBJECTS" kind="MATCHOBJECTS" states="expanded">
+        </object>
+        <object name="PRODUCTS" kind="PRODUCTS" states="expanded">
+          <objects>
+            <object name="ACQUISITION" kind="ACQUISITION" states="expanded">
+              <objects>
+                <object name="Data Collection" kind="metarecord" states="expanded">
+                  <links>
+                    <link name="0" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                    <link name="1" node="/*[0]/*[3]/*[0]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="2" node="/*[0]/*[3]/*[1]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="3" node="/*[0]/*[3]/*[2]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="4" node="/*[0]/*[3]/*[3]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="5" node="/*[0]/*[3]/*[4]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="6" node="/*[0]/*[3]/*[5]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="7" node="/*[0]/*[3]/*[6]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="8" node="/*[0]/*[3]/*[7]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="9" node="/*[0]/*[3]/*[8]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="10" node="/*[0]/*[3]/*[9]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="11" node="/*[0]/*[3]/*[10]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="12" node="/*[0]/*[3]/*[11]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="13" node="/*[0]/*[3]/*[12]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="14" node="/*[0]/*[3]/*[13]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="15" node="/*[0]/*[3]/*[14]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="16" node="/*[0]/*[3]/*[15]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="17" node="/*[0]/*[3]/*[16]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="18" node="/*[0]/*[3]/*[17]/*[0]/*[0]" kind="rxp-file"/>
+                    <link name="19" node="/*[0]/*[3]/*[18]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <files>
+                    <file id="003" item="dcf-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="Data_Collection" ext=".dcf"/>
+                    <file id="006" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="001" ext=".p2d.rdx"/>
+                    <file id="007" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="001" ext=".p2d.rds"/>
+                    <file id="010" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="002" ext=".p2d.rdx"/>
+                    <file id="011" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="002" ext=".p2d.rds"/>
+                    <file id="014" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="003" ext=".p2d.rdx"/>
+                    <file id="015" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="003" ext=".p2d.rds"/>
+                    <file id="018" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="004" ext=".p2d.rdx"/>
+                    <file id="019" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="004" ext=".p2d.rds"/>
+                    <file id="024" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="005" ext=".p2d.rdx"/>
+                    <file id="025" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="006" ext=".p2d.rdx"/>
+                    <file id="026" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="005" ext=".p2d.rds"/>
+                    <file id="027" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="006" ext=".p2d.rds"/>
+                    <file id="030" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="007" ext=".p2d.rdx"/>
+                    <file id="031" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="007" ext=".p2d.rds"/>
+                    <file id="034" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="008" ext=".p2d.rdx"/>
+                    <file id="035" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="008" ext=".p2d.rds"/>
+                    <file id="038" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="009" ext=".p2d.rdx"/>
+                    <file id="039" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="009" ext=".p2d.rds"/>
+                    <file id="042" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="010" ext=".p2d.rdx"/>
+                    <file id="043" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="010" ext=".p2d.rds"/>
+                    <file id="046" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="011" ext=".p2d.rdx"/>
+                    <file id="047" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="011" ext=".p2d.rds"/>
+                    <file id="052" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="012" ext=".p2d.rdx"/>
+                    <file id="053" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="013" ext=".p2d.rdx"/>
+                    <file id="054" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="012" ext=".p2d.rds"/>
+                    <file id="055" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="013" ext=".p2d.rds"/>
+                    <file id="058" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="014" ext=".p2d.rdx"/>
+                    <file id="059" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="014" ext=".p2d.rds"/>
+                    <file id="062" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="015" ext=".p2d.rdx"/>
+                    <file id="063" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="015" ext=".p2d.rds"/>
+                    <file id="066" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="016" ext=".p2d.rdx"/>
+                    <file id="067" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="016" ext=".p2d.rds"/>
+                    <file id="070" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="017" ext=".p2d.rdx"/>
+                    <file id="071" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="017" ext=".p2d.rds"/>
+                    <file id="074" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="018" ext=".p2d.rdx"/>
+                    <file id="075" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="018" ext=".p2d.rds"/>
+                    <file id="078" item="rdx-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="019" ext=".p2d.rdx"/>
+                    <file id="079" item="rds-file" opts="auto-rename auto-delete" path=".\06_RIEGL_PROC\05_OVERVIEW\" name="019" ext=".p2d.rds"/>
+                  </files>
+                </object>
+              </objects>
+            </object>
+          </objects>
+        </object>
+        <object name="VIEWS" kind="VIEWS" states="expanded">
+          <objects>
+            <object name="CHASE" kind="acquisition-view-BODY" states="expanded">
+              <fields>
+                <field name="tools-checked" data="2" kind="integer"/>
+                <field name="cam-position" data="0.000000 -2.000000 0.000000 0.000000 1.000000 -0.000000 -0.000000 0.000000 1.000000" kind="double[9]"/>
+                <field name="axis-scale" data="1 1 1" kind="integer[3]"/>
+                <field name="win-info" data="20 77 278 83 0 0 0 1" kind="integer[7]"/>
+                <field name="grid-mode" data="0" kind="integer"/>
+                <field name="grid-color" data="217 217 217 100" kind="color"/>
+                <field name="grid-text-color" data="255 255 255 255" kind="color"/>
+                <field name="info-visible" data="0" kind="bool"/>
+                <field name="info-color" data="255 255 255 255" kind="color"/>
+                <field name="text-size" data="10" kind="integer"/>
+                <field name="body-visible" data="0" kind="bool"/>
+                <field name="body-color" data="255 0 0 255" kind="color"/>
+                <field name="body-size" data="1" kind="integer"/>
+                <field name="background-color" data="0 0 0 100" kind="color"/>
+                <field name="update-rate" data="25" kind="double"/>
+                <field name="fov" data="45" kind="single"/>
+                <field name="buffer-size" data="500" kind="integer"/>
+                <field name="position-offset" data="-2" kind="integer"/>
+                <field name="horizontal-offset" data="0" kind="single"/>
+                <field name="vertical-offset" data="0" kind="single"/>
+                <field name="view-type" data="0" kind="integer"/>
+                <field name="single-color-type" data="0" kind="integer"/>
+                <field name="single-thermo-visible" data="0" kind="bool"/>
+                <field name="single-thermo-inverted" data="0" kind="bool"/>
+                <field name="single-min-value" data="0.00" kind="single"/>
+                <field name="single-max-value" data="0.00" kind="single"/>
+                <field name="single-below-min" data="0 0 0 255" kind="color"/>
+                <field name="single-above-max" data="255 255 255 255" kind="color"/>
+                <field name="height-color-type" data="0" kind="integer"/>
+                <field name="height-thermo-visible" data="1" kind="bool"/>
+                <field name="height-thermo-inverted" data="0" kind="bool"/>
+                <field name="height-min-value" data="100.00" kind="single"/>
+                <field name="height-max-value" data="500.00" kind="single"/>
+                <field name="height-below-min" data="0 0 0 255" kind="color"/>
+                <field name="height-above-max" data="255 255 255 255" kind="color"/>
+                <field name="reflectance-color-type" data="2" kind="integer"/>
+                <field name="reflectance-thermo-visible" data="1" kind="bool"/>
+                <field name="reflectance-thermo-inverted" data="0" kind="bool"/>
+                <field name="reflectance-min-value" data="-25.00" kind="single"/>
+                <field name="reflectance-max-value" data="5.00" kind="single"/>
+                <field name="reflectance-below-min" data="0 0 0 255" kind="color"/>
+                <field name="reflectance-above-max" data="255 255 255 255" kind="color"/>
+                <field name="distance-color-type" data="5" kind="integer"/>
+                <field name="distance-thermo-visible" data="1" kind="bool"/>
+                <field name="distance-thermo-inverted" data="0" kind="bool"/>
+                <field name="distance-min-value" data="5.00" kind="single"/>
+                <field name="distance-max-value" data="50.00" kind="single"/>
+                <field name="distance-below-min" data="255 0 0 255" kind="color"/>
+                <field name="distance-above-max" data="0 255 0 255" kind="color"/>
+                <field name="distance-reflectance-color-type" data="5" kind="integer"/>
+                <field name="distance-reflectance-thermo-visible" data="1" kind="bool"/>
+                <field name="distance-reflectance-thermo-inverted" data="0" kind="bool"/>
+                <field name="distance-reflectance-min-value" data="5.00" kind="single"/>
+                <field name="distance-reflectance-max-value" data="50.00" kind="single"/>
+                <field name="distance-reflectance-below-min" data="255 0 0 255" kind="color"/>
+                <field name="distance-reflectance-above-max" data="0 255 0 255" kind="color"/>
+                <field name="height-difference-color-type" data="5" kind="integer"/>
+                <field name="height-difference-thermo-visible" data="1" kind="bool"/>
+                <field name="height-difference-thermo-inverted" data="0" kind="bool"/>
+                <field name="height-difference-min-value" data="0.00" kind="single"/>
+                <field name="height-difference-max-value" data="15.00" kind="single"/>
+                <field name="height-difference-below-min" data="0 255 0 255" kind="color"/>
+                <field name="height-difference-above-max" data="255 0 0 255" kind="color"/>
+              </fields>
+              <objects>
+                <object name="Scanner 1" kind="acquisition-view-object-BODY" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 255 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="segment" data="1" kind="integer"/>
+                  </fields>
+                </object>
+              </objects>
+            </object>
+            <object name="TOP" kind="acquisition-view-2D" states="expanded">
+              <fields>
+                <field name="tools-checked" data="0" kind="integer"/>
+                <field name="cam-position" data="14422.565430 -102469.007812 24517.033203 0.000000 0.000000 -1.000000 0.000000 1.000000 0.000000" kind="double[9]"/>
+                <field name="axis-scale" data="1 1 1" kind="integer[3]"/>
+                <field name="win-info" data="548 0 718 794 0 0 1 1" kind="integer[7]"/>
+                <field name="grid-mode" data="0" kind="integer"/>
+                <field name="grid-color" data="217 217 217 100" kind="color"/>
+                <field name="grid-text-color" data="255 255 255 255" kind="color"/>
+                <field name="info-visible" data="0" kind="bool"/>
+                <field name="info-color" data="255 255 255 255" kind="color"/>
+                <field name="text-size" data="10" kind="integer"/>
+                <field name="body-visible" data="1" kind="bool"/>
+                <field name="body-color" data="255 255 255 255" kind="color"/>
+                <field name="body-size" data="1" kind="integer"/>
+                <field name="background-color" data="0 0 0 100" kind="color"/>
+                <field name="update-rate" data="2" kind="double"/>
+                <field name="view-type" data="0" kind="integer"/>
+                <field name="orientation-method" data="0" kind="integer"/>
+                <field name="single-color-type" data="0" kind="integer"/>
+                <field name="single-thermo-visible" data="0" kind="bool"/>
+                <field name="single-thermo-inverted" data="0" kind="bool"/>
+                <field name="single-min-value" data="0.00" kind="single"/>
+                <field name="single-max-value" data="0.00" kind="single"/>
+                <field name="single-below-min" data="0 0 0 255" kind="color"/>
+                <field name="single-above-max" data="255 255 255 255" kind="color"/>
+                <field name="overlap-color-type" data="0" kind="integer"/>
+                <field name="overlap-thermo-visible" data="1" kind="bool"/>
+                <field name="overlap-thermo-inverted" data="0" kind="bool"/>
+                <field name="overlap-min-value" data="100.00" kind="single"/>
+                <field name="overlap-max-value" data="500.00" kind="single"/>
+                <field name="overlap-below-min" data="0 0 0 255" kind="color"/>
+                <field name="overlap-above-max" data="255 255 255 255" kind="color"/>
+                <field name="height-min-color-type" data="0" kind="integer"/>
+                <field name="height-min-thermo-visible" data="1" kind="bool"/>
+                <field name="height-min-thermo-inverted" data="0" kind="bool"/>
+                <field name="height-min-min-value" data="100.00" kind="single"/>
+                <field name="height-min-max-value" data="500.00" kind="single"/>
+                <field name="height-min-below-min" data="0 0 0 255" kind="color"/>
+                <field name="height-min-above-max" data="255 255 255 255" kind="color"/>
+                <field name="height-max-color-type" data="0" kind="integer"/>
+                <field name="height-max-thermo-visible" data="1" kind="bool"/>
+                <field name="height-max-thermo-inverted" data="0" kind="bool"/>
+                <field name="height-max-min-value" data="0.00" kind="single"/>
+                <field name="height-max-max-value" data="30.00" kind="single"/>
+                <field name="height-max-below-min" data="0 0 0 255" kind="color"/>
+                <field name="height-max-above-max" data="255 255 255 255" kind="color"/>
+                <field name="height-diff-color-type" data="2" kind="integer"/>
+                <field name="height-diff-thermo-visible" data="1" kind="bool"/>
+                <field name="height-diff-thermo-inverted" data="0" kind="bool"/>
+                <field name="height-diff-min-value" data="-25.00" kind="single"/>
+                <field name="height-diff-max-value" data="5.00" kind="single"/>
+                <field name="height-diff-below-min" data="0 0 0 255" kind="color"/>
+                <field name="height-diff-above-max" data="255 255 255 255" kind="color"/>
+                <field name="shaded-relief-color-type" data="2" kind="integer"/>
+                <field name="shaded-relief-thermo-visible" data="1" kind="bool"/>
+                <field name="shaded-relief-thermo-inverted" data="0" kind="bool"/>
+                <field name="shaded-relief-min-value" data="0.00" kind="single"/>
+                <field name="shaded-relief-max-value" data="25.00" kind="single"/>
+                <field name="shaded-relief-below-min" data="0 0 0 255" kind="color"/>
+                <field name="shaded-relief-above-max" data="255 255 255 255" kind="color"/>
+                <field name="reflectance-color-type" data="0" kind="integer"/>
+                <field name="reflectance-thermo-visible" data="1" kind="bool"/>
+                <field name="reflectance-thermo-inverted" data="1" kind="bool"/>
+                <field name="reflectance-min-value" data="0.00" kind="single"/>
+                <field name="reflectance-max-value" data="20.00" kind="single"/>
+                <field name="reflectance-below-min" data="0 0 0 255" kind="color"/>
+                <field name="reflectance-above-max" data="255 255 255 255" kind="color"/>
+                <field name="alpha-record" data="50" kind="integer"/>
+                <field name="alpha-trajectory" data="255" kind="integer"/>
+                <field name="alpha-scan" data="255" kind="integer"/>
+                <field name="alpha-cam" data="127" kind="integer"/>
+                <field name="alpha-control" data="255" kind="integer"/>
+                <field name="alpha-area" data="255" kind="integer"/>
+                <field name="alpha-route" data="255" kind="integer"/>
+                <field name="alpha-placemark" data="255" kind="integer"/>
+                <field name="alpha-geoimage" data="255" kind="integer"/>
+                <field name="alpha-map" data="255" kind="integer"/>
+                <field name="map-visible" data="1" kind="bool"/>
+                <field name="map-name" data="OSM Mapnik" kind="string"/>
+                <field name="profile-section-visible" data="0" kind="bool"/>
+                <field name="profile-section-color" data="255 0 0 255" kind="color"/>
+              </fields>
+              <objects>
+                <object name="190226_010105" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[2]/*[0]" kind="pof-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 255 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[0]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 2" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[1]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 3" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[2]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 4" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[3]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 5" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[4]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 6" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[5]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 7" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[6]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 8" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[7]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 9" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[8]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 10" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[9]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 11" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[10]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 12" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[11]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 13" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[12]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 14" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[13]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 15" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[14]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 16" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[15]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 17" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[16]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 18" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[17]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name=" run 19" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[4]/*[18]" kind="area-object"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="name-visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="3" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_014610_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[0]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_015157_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[1]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_015549_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[2]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_020001_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[3]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_020410_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[4]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_020709_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[5]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_021116_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[6]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_021726_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[7]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_022122_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[8]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_022532_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[9]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_022956_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[10]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_023435_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[11]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_023752_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[12]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_024300_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[13]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_024848_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[14]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_025345_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[15]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_025921_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[16]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_030419_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[17]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+                <object name="190226_030829_Scanner_1" kind="acquisition-view-object-2D" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[3]/*[18]/*[0]/*[0]" kind="rxp-file"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="0 85 0 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="index" data="0" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+              </objects>
+            </object>
+            <object name="SOCS1" kind="acquisition-view-SOCS" states="expanded">
+              <fields>
+                <field name="tools-checked" data="2" kind="integer"/>
+                <field name="cam-position" data="0.500000 0.500000 1.707107 0.000000 0.000000 -1.000000 0.000000 1.000000 0.000000" kind="double[9]"/>
+                <field name="axis-scale" data="1 1 1" kind="integer[3]"/>
+                <field name="win-info" data="1 0 278 540 0 1 0 1" kind="integer[7]"/>
+                <field name="grid-mode" data="1" kind="integer"/>
+                <field name="grid-color" data="217 217 217 100" kind="color"/>
+                <field name="grid-text-color" data="255 255 255 255" kind="color"/>
+                <field name="info-visible" data="0" kind="bool"/>
+                <field name="info-color" data="255 255 255 255" kind="color"/>
+                <field name="text-size" data="10" kind="integer"/>
+                <field name="body-visible" data="1" kind="bool"/>
+                <field name="body-color" data="255 0 0 255" kind="color"/>
+                <field name="body-size" data="1" kind="integer"/>
+                <field name="background-color" data="0 0 0 100" kind="color"/>
+                <field name="update-rate" data="25" kind="double"/>
+                <field name="persistent-mode" data="0" kind="boolean"/>
+                <field name="clear-time" data="1" kind="integer"/>
+              </fields>
+              <objects>
+                <object name="Scanner 1" kind="acquisition-view-object-SOCS" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 255 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="type" data="0" kind="integer"/>
+                    <field name="rotation" data="0" kind="integer"/>
+                    <field name="flip" data="0" kind="boolean"/>
+                    <field name="single-target-color" data="255 255 255 255" kind="integer[4]"/>
+                    <field name="first-target-color" data="255 255 0 255" kind="integer[4]"/>
+                    <field name="interior-target-color" data="0 255 255 255" kind="integer[4]"/>
+                    <field name="last-target-color" data="0 0 255 255" kind="integer[4]"/>
+                    <field name="view-type" data="0" kind="integer"/>
+                    <field name="segment" data="1" kind="integer"/>
+                  </fields>
+                </object>
+              </objects>
+            </object>
+            <object name="CAMERA" kind="acquisition-view-CAMERA" states="expanded">
+              <fields>
+                <field name="tools-checked" data="0" kind="integer"/>
+                <field name="cam-position" data="0.000000 0.000000 0.000000 0.000000 1.000000 -0.000000 -0.000000 0.000000 1.000000" kind="double[9]"/>
+                <field name="axis-scale" data="1 1 1" kind="integer[3]"/>
+                <field name="win-info" data="0 0 699 794 0 0 0 1" kind="integer[7]"/>
+                <field name="grid-mode" data="64" kind="integer"/>
+                <field name="grid-color" data="217 217 217 100" kind="color"/>
+                <field name="grid-text-color" data="255 255 255 255" kind="color"/>
+                <field name="info-visible" data="1" kind="bool"/>
+                <field name="info-color" data="255 255 255 255" kind="color"/>
+                <field name="text-size" data="10" kind="integer"/>
+                <field name="body-visible" data="0" kind="bool"/>
+                <field name="body-color" data="255 255 255 255" kind="color"/>
+                <field name="body-size" data="1" kind="integer"/>
+                <field name="background-color" data="0 0 0 100" kind="color"/>
+                <field name="update-rate" data="10" kind="double"/>
+              </fields>
+              <objects>
+                <object name="Camera 1" kind="acquisition-view-object-CAMERA" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[0]/*[4]/*[0]" kind="camdevice"/>
+                  </links>
+                  <fields>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="rotation" data="0" kind="integer"/>
+                    <field name="histogram" data="1" kind="boolean"/>
+                    <field name="thermo" data="0" kind="boolean"/>
+                    <field name="info_size_visible" data="1" kind="boolean"/>
+                    <field name="info_name_visible" data="1" kind="boolean"/>
+                    <field name="info_exposure_visible" data="1" kind="boolean"/>
+                    <field name="info_exposure_type" data="0" kind="integer"/>
+                    <field name="info_iso_visible" data="1" kind="boolean"/>
+                    <field name="info_gain_visible" data="1" kind="boolean"/>
+                    <field name="info_aperture_visible" data="1" kind="boolean"/>
+                    <field name="info_ground_sampling_distance_visible" data="1" kind="boolean"/>
+                    <field name="info_pixel_blur_visible" data="1" kind="boolean"/>
+                  </fields>
+                </object>
+              </objects>
+            </object>
+            <object name="PROFILE" kind="acquisition-view-PROFILE" states="expanded">
+              <fields>
+                <field name="tools-checked" data="2" kind="integer"/>
+                <field name="cam-position" data="-17.449444 -525.382779 2080.419922 0.000000 0.000000 -1.000000 0.000000 1.000000 0.000000" kind="double[9]"/>
+                <field name="axis-scale" data="1 1 1" kind="integer[3]"/>
+                <field name="win-info" data="1019 963 600 33 0 0 0 0" kind="integer[7]"/>
+                <field name="grid-mode" data="1" kind="integer"/>
+                <field name="grid-color" data="217 217 217 100" kind="color"/>
+                <field name="grid-text-color" data="255 255 255 255" kind="color"/>
+                <field name="info-visible" data="0" kind="bool"/>
+                <field name="info-color" data="255 255 255 255" kind="color"/>
+                <field name="text-size" data="10" kind="integer"/>
+                <field name="body-visible" data="1" kind="bool"/>
+                <field name="body-color" data="255 0 0 255" kind="color"/>
+                <field name="body-size" data="1" kind="integer"/>
+                <field name="background-color" data="0 0 0 100" kind="color"/>
+                <field name="update-rate" data="1" kind="double"/>
+                <field name="buffer-size" data="25" kind="single"/>
+              </fields>
+              <objects>
+                <object name="Scanner 1" kind="acquisition-view-object-PROFILE" states="expanded">
+                  <links>
+                    <link name="meta-link" node="/*[0]/*[0]/*[2]/*[0]" kind="lasdevice"/>
+                  </links>
+                  <fields>
+                    <field name="color" data="255 255 255 255" kind="integer[4]"/>
+                    <field name="visible" data="1" kind="boolean"/>
+                    <field name="thickness" data="1" kind="integer"/>
+                    <field name="segment" data="255" kind="integer"/>
+                  </fields>
+                </object>
+              </objects>
+            </object>
+          </objects>
+        </object>
+      </objects>
+    </object>
+  </content>
+</document>

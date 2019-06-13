@@ -8,17 +8,21 @@ namespace FlightPlanMatcher
         static void Main(string[] args)
         {
 
-            //KMLParser parser = new KMLParser();
+            KMLParser parser = new KMLParser();
 
-            //parser.ParseKMLFile();
+            PlannedFlightProject plannedFlightProject = parser.ParseKMLFile();
 
             ActualFlightProject actualFlightProject = RPPParser.AddSwathsFromRPP();
+            
 
             foreach (var swath in actualFlightProject.ActualSwathList)
             {
                 Console.WriteLine("Actual Order = " + swath.ActualOrder);
-                Console.WriteLine("Planned order: " + swath.PlannedOrder);
+                Console.WriteLine("Planned order = " + swath.PlannedOrder);
+                
             }
+
+            
 
         }
     }

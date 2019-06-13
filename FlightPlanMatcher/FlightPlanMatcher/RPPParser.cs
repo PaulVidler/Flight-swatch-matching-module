@@ -10,7 +10,7 @@ namespace FlightPlanMatcher
         public static ActualFlightProject AddSwathsFromRPP()
         {
 
-            string rppPath = @"C:\Users\Paul\Desktop\Program_for_Dean\Callide_VQ780H_190428.rpp";
+            string rppPath = @"C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Callide_VQ780_190226.rpp";
 
             RiProcessProjectXmlParser project = new RiProcessProjectXmlParser();
 

@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 
 <Document>
-	<name>Callide_1904_AMG_750</name>
+	<name>Callide_Bhill_1902_AMG_1000</name>
 	<Style id="GCP">
 		<IconStyle>
 			<color>FFFFFFFF</color>
@@ -164,7 +164,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.55311755,-24.27709366,1082 150.66316849,-24.31265013,1082
+			<coordinates>150.47601879,-24.19623102,1239 150.49811011,-24.25061749,1239
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -180,7 +180,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.54894435,-24.28109729,1074 150.66335512,-24.31805107,1074
+			<coordinates>150.48265426,-24.19156601,1239 150.50815731,-24.25436591,1239
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -196,7 +196,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.54713815,-24.28592433,1066 150.66212069,-24.32305098,1066
+			<coordinates>150.48930857,-24.18691903,1239 150.51650494,-24.25390678,1239
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -212,7 +212,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.54782838,-24.29151378,1060 150.66060320,-24.32790208,1060
+			<coordinates>150.49677764,-24.18436115,1256 150.52484270,-24.25344703,1256
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -228,7 +228,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.54851829,-24.29712128,1062 150.65573517,-24.33172651,1062
+			<coordinates>150.50425610,-24.18181207,1285 150.53319029,-24.25298697,1285
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -244,7 +244,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.54913967,-24.30270961,1062 150.64921186,-24.33501059,1062
+			<coordinates>150.51173447,-24.17925357,1285 150.54067251,-24.25042736,1285
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -260,7 +260,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.56416107,-24.31292562,1056 150.63767422,-24.33666373,1056
+			<coordinates>150.48080482,-24.24554788,1253 150.52296797,-24.18755132,1253
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -276,7 +276,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.58993367,-24.32669641,1044 150.62861340,-24.33914907,1044
+			<coordinates>150.55435185,-24.27640045,1346 150.66594511,-24.31163672,1346
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -292,7 +292,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.61049416,-24.33869311,1044 150.62672164,-24.34391264,1044
+			<coordinates>150.54711828,-24.28183505,1346 150.66567708,-24.31927835,1346
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -308,7 +308,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.48152163,-24.23114503,1029 150.48649644,-24.24546155,1029
+			<coordinates>150.54452353,-24.28874344,1346 150.66540865,-24.32693803,1346
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -324,7 +324,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.47647031,-24.19978578,1029 150.49241293,-24.24595639,1029
+			<coordinates>150.54423839,-24.29639318,1346 150.66049769,-24.33310894,1346
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -340,7 +340,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.48103874,-24.19616070,1029 150.49914488,-24.24854946,1029
+			<coordinates>150.54859307,-24.30552604,1346 150.65094359,-24.33779962,1346
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -356,7 +356,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.48556774,-24.19252578,1029 150.50657423,-24.25325681,1029
+			<coordinates>150.58555411,-24.32492075,1261 150.63907705,-24.34176763,1261
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -372,7 +372,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.49013584,-24.18889135,1029 150.51255889,-24.25381519,1029
+			<coordinates>150.60428196,-24.33741260,1239 150.63226641,-24.34614769,1239
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -388,7 +388,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.49539120,-24.18733508,1029 150.51780626,-24.25229428,1029
+			<coordinates>150.60707091,-24.25284994,1376 150.65146253,-24.26738939,1376
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -404,7 +404,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.50064575,-24.18581471,1029 150.52309358,-24.25073773,1029
+			<coordinates>150.59266871,-24.25590826,1376 150.65113440,-24.27505715,1376
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -420,7 +420,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.50592021,-24.18427642,1029 150.52909760,-24.25131382,1029
+			<coordinates>150.58530175,-24.26125250,1376 150.64610788,-24.28117176,1376
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -436,7 +436,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.51117489,-24.18273762,1029 150.53435490,-24.24977443,1029
+			<coordinates>150.58731868,-24.26967023,1376 150.64109071,-24.28728631,1376
 			</coordinates>
 		</LineString>
 	</Placemark>
@@ -452,135 +452,7 @@
 			<tessellate>1</tessellate>
 			<extrude>0</extrude>
 			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.51714648,-24.18329540,1041 150.54021088,-24.24986026,1041
-			</coordinates>
-		</LineString>
-	</Placemark>
-</Folder>
-
-<Folder>
-	<name> Run-20</name>
-	<Placemark>
-		<name> run 20</name>
-		<Snippet></Snippet>
-		<styleUrl>#flightline</styleUrl>
-		<LineString>
-			<tessellate>1</tessellate>
-			<extrude>0</extrude>
-			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.47752789,-24.24099855,997 150.53766445,-24.21798296,997
-			</coordinates>
-		</LineString>
-	</Placemark>
-</Folder>
-
-<Folder>
-	<name> Run-21</name>
-	<Placemark>
-		<name> run 21</name>
-		<Snippet></Snippet>
-		<styleUrl>#flightline</styleUrl>
-		<LineString>
-			<tessellate>1</tessellate>
-			<extrude>0</extrude>
-			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.61169071,-24.25114433,1166 150.64949858,-24.26709725,1166
-			</coordinates>
-		</LineString>
-	</Placemark>
-</Folder>
-
-<Folder>
-	<name> Run-22</name>
-	<Placemark>
-		<name> run 22</name>
-		<Snippet></Snippet>
-		<styleUrl>#flightline</styleUrl>
-		<LineString>
-			<tessellate>1</tessellate>
-			<extrude>0</extrude>
-			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.60634793,-24.25412938,1148 150.64746871,-24.27145288,1148
-			</coordinates>
-		</LineString>
-	</Placemark>
-</Folder>
-
-<Folder>
-	<name> Run-23</name>
-	<Placemark>
-		<name> run 23</name>
-		<Snippet></Snippet>
-		<styleUrl>#flightline</styleUrl>
-		<LineString>
-			<tessellate>1</tessellate>
-			<extrude>0</extrude>
-			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.59914276,-24.25666057,1146 150.64572520,-24.27629134,1146
-			</coordinates>
-		</LineString>
-	</Placemark>
-</Folder>
-
-<Folder>
-	<name> Run-24</name>
-	<Placemark>
-		<name> run 24</name>
-		<Snippet></Snippet>
-		<styleUrl>#flightline</styleUrl>
-		<LineString>
-			<tessellate>1</tessellate>
-			<extrude>0</extrude>
-			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.59319822,-24.25968075,1125 150.64113855,-24.27990313,1125
-			</coordinates>
-		</LineString>
-	</Placemark>
-</Folder>
-
-<Folder>
-	<name> Run-25</name>
-	<Placemark>
-		<name> run 25</name>
-		<Snippet></Snippet>
-		<styleUrl>#flightline</styleUrl>
-		<LineString>
-			<tessellate>1</tessellate>
-			<extrude>0</extrude>
-			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.58854231,-24.26327175,1125 150.63878861,-24.28449737,1125
-			</coordinates>
-		</LineString>
-	</Placemark>
-</Folder>
-
-<Folder>
-	<name> Run-26</name>
-	<Placemark>
-		<name> run 26</name>
-		<Snippet></Snippet>
-		<styleUrl>#flightline</styleUrl>
-		<LineString>
-			<tessellate>1</tessellate>
-			<extrude>0</extrude>
-			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.58620092,-24.26785619,1125 150.63650741,-24.28909262,1125
-			</coordinates>
-		</LineString>
-	</Placemark>
-</Folder>
-
-<Folder>
-	<name> Run-27</name>
-	<Placemark>
-		<name> run 27</name>
-		<Snippet></Snippet>
-		<styleUrl>#flightline</styleUrl>
-		<LineString>
-			<tessellate>1</tessellate>
-			<extrude>0</extrude>
-			<altitudeMode>absolute</altitudeMode>
-			<coordinates>150.61801094,-24.34765749,1093 150.62604562,-24.24899511,1093
+			<coordinates>150.61989807,-24.35106309,1339 150.62381758,-24.25074760,1339
 			</coordinates>
 		</LineString>
 	</Placemark>

@@ -13,7 +13,7 @@ namespace FlightPlanMatcher
     class KMLParser
     {
         //public static void ParseKMLFile(string kmlFile)
-        public void ParseKMLFile()
+        public PlannedFlightProject ParseKMLFile()
         {
 
             //Create the XmlDocument.
@@ -24,7 +24,7 @@ namespace FlightPlanMatcher
 
 
             // hard coded KML location
-            doc.Load(@"C:\Users\Paul\Desktop\Program_for_Dean\Callide_1904_AMG_750.kml");
+            doc.Load(@"C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\Callide_Bhill_1902_AMG_1000.kml");
 
             XmlNodeList name = doc.GetElementsByTagName("name");
             XmlNodeList coords = doc.GetElementsByTagName("coordinates");
@@ -109,6 +109,7 @@ namespace FlightPlanMatcher
                 counter++;
             }
 
+            return flight;
 
         }
 

@@ -16,7 +16,14 @@ namespace FlightPlanMatcher
             // need to recieve and compare an "ActualFlightProject" and "PlannedFlightProject" objects. Loop through the swaths in each and
             // compare based on start/finish lat and long of each swath. Some swaths may be flown in the wrong direction, some swaths may
             // be imcomplete or even in 2 halves. Try to be careful how this one is approached. 
-            // You're a surveyor, geometry is your wheel house, you've got this.....
+            // You're a surveyor; geometry is your wheel house, you've got this.....
+
+            // if actualFlightProject.plannedorder == actualFlightProject.actualorder { match swaths together here }
+            // else if 
+
+
+
+
 
         }
 
