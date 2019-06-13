@@ -4,16 +4,22 @@ using System.Text;
 
 namespace FlightPlanMatcher
 {
+    
     class ActualSwath
     {
 
-        public double StartLat { get; set; }
-        public double StartLong { get; set; }
-        public double EndLat { get; set; }
-        public double EndLong { get; set; }
+        public decimal StartLat { get; set; }
+        public decimal StartLong { get; set; }
+        public decimal? EndLat { get; set; }
+        public decimal? EndLong { get; set; }
 
-        public int Altitude { get; set; }
+        public decimal Altitude { get; set; }
         // flight run number according to the order it was actually flown - Comes from Riegl module
-        public string ActualOrder { get; set; }
+        public int ActualOrder { get; set; }
+        public int? PlannedOrder { get; set; }
+        public Atlass.Riegl.LaserConfiguration sensor { get; set; }
+
+
+
     }
 }

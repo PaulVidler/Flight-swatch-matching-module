@@ -8,17 +8,17 @@ namespace FlightPlanMatcher
     {
         public string ProjectName { get; set; }
 
-        public List<IActualFlight> ActualSwathList = new List<IActualFlight>();
+        public List<ActualSwath> ActualSwathList = new List<ActualSwath>();
 
 
-        public void AddSwath(ActualSwath swath)
+        public void AddSwath(ActualSwath actSwath)
         {
-            PlannedSwathList.Add(swath);
+            ActualSwathList.Add(actSwath);
         }
 
-        public int totalPlannedSwaths()
+        public int totalActualSwaths()
         {
-            return PlannedSwathList.Count;
+            return ActualSwathList.Count;
         }
 
     }

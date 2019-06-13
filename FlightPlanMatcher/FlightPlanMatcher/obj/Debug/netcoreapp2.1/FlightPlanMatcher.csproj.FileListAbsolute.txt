@@ -6,3 +6,13 @@ C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\F
 C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\obj\Debug\netcoreapp2.1\FlightPlanMatcher.csproj.CoreCompileInputs.cache
 C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\obj\Debug\netcoreapp2.1\FlightPlanMatcher.AssemblyInfoInputs.cache
 C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\obj\Debug\netcoreapp2.1\FlightPlanMatcher.AssemblyInfo.cs
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\bin\Debug\netcoreapp2.1\FlightPlanMatcher.deps.json
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\bin\Debug\netcoreapp2.1\FlightPlanMatcher.runtimeconfig.json
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\bin\Debug\netcoreapp2.1\FlightPlanMatcher.runtimeconfig.dev.json
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\bin\Debug\netcoreapp2.1\FlightPlanMatcher.dll
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\bin\Debug\netcoreapp2.1\FlightPlanMatcher.pdb
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\bin\Debug\netcoreapp2.1\Atlass.Riegl.dll
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\bin\Debug\netcoreapp2.1\Atlass.Riegl.pdb
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\obj\Debug\netcoreapp2.1\FlightPlanMatcher.csproj.CopyComplete
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\obj\Debug\netcoreapp2.1\FlightPlanMatcher.dll
+C:\Users\Paul\Documents\GitHub\Flight-swatch-matching-module\FlightPlanMatcher\FlightPlanMatcher\obj\Debug\netcoreapp2.1\FlightPlanMatcher.pdb

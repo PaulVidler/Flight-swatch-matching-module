@@ -1,4 +1,5 @@
 ﻿using System;
+using Atlass.Riegl;
 
 namespace FlightPlanMatcher
 {
@@ -7,14 +8,18 @@ namespace FlightPlanMatcher
         static void Main(string[] args)
         {
 
-            KMLParser parser = new KMLParser();
+            //KMLParser parser = new KMLParser();
 
-            parser.ParseKMLFile();
+            //parser.ParseKMLFile();
 
-            
+            ActualFlightProject actualFlightProject = RPPParser.AddSwathsFromRPP();
 
+            foreach (var swath in actualFlightProject.ActualSwathList)
+            {
+                Console.WriteLine("Actual Order = " + swath.ActualOrder);
+                Console.WriteLine("Planned order: " + swath.PlannedOrder);
+            }
 
-            
         }
     }
 }

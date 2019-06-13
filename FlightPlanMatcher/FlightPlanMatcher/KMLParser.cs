@@ -88,7 +88,7 @@ namespace FlightPlanMatcher
 
 
             //new planned flight object used to add swaths to.
-            PlannedFlight flight = new PlannedFlight();
+            PlannedFlightProject flight = new PlannedFlightProject();
 
             // counter for loop to add details to swaths
             int counter = 0;
@@ -116,5 +116,5 @@ namespace FlightPlanMatcher
 
 
     }
-    }
+    
 }

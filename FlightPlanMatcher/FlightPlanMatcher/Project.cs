@@ -11,19 +11,12 @@ namespace FlightPlanMatcher
     {
         // method to match actual flight objects to planned flight lines
 
-        public void MatchPairs()
+        public void MatchPairs(ActualFlightProject actualFlightProject, PlannedFlightProject plannedFlightProject)
         {
-            // Dictionary<PlannedFlight.lines, IActualFlight.lines> projectDict = new Dictionary<PlannedFlight.lines, IActualFlight.lines>();
-
-           // Dictionary
-
-            // *************
-            // If I can get Lat Long from the KML. We can auto-match them up in the project and perhaps auto-fill
-            // where the pilots will match planned project lines with actual project lines from the .RPP file parser.
-            // *************
-
-            // can I take a planned run number from the KML and have it match with the 
-
+            // need to recieve and compare an "ActualFlightProject" and "PlannedFlightProject" objects. Loop through the swaths in each and
+            // compare based on start/finish lat and long of each swath. Some swaths may be flown in the wrong direction, some swaths may
+            // be imcomplete or even in 2 halves. Try to be careful how this one is approached. 
+            // You're a surveyor, geometry is your wheel house, you've got this.....
 
         }
 
