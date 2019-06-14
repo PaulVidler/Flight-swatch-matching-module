@@ -1,5 +1,6 @@
 ﻿using System;
 using Atlass.Riegl;
+using System.Device.Location;
 
 namespace FlightPlanMatcher
 {
@@ -22,7 +23,10 @@ namespace FlightPlanMatcher
                 
             }
 
-            
+            GeoCoordinate newGeo = new GeoCoordinate(89.4455, 123.4455);
+            GeoCoordinate newGeo1 = new GeoCoordinate(89.4454, 123.4454);
+
+            Console.WriteLine("Distance between 1 and 2: " + newGeo.GetDistanceTo(newGeo1));
 
         }
     }

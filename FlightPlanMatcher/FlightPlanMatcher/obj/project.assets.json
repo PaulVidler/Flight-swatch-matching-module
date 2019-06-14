@@ -2,6 +2,12 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.1": {
+      "GeoCoordinate/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        }
+      },
       "Microsoft.NETCore.App/2.1.0": {
         "type": "package",
         "dependencies": {
@@ -208,6 +214,15 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "System.Device.Location.Portable/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/System.Device.Portable.dll": {}
+        },
+        "runtime": {
+          "lib/System.Device.Portable.dll": {}
+        }
+      },
       "Atlass.Riegl/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -221,6 +236,19 @@
     }
   },
   "libraries": {
+    "GeoCoordinate/2.0.1": {
+      "sha512": "Am5GANF7uS3vlYBHExLtouH/Yrsc+6182nTdxXfnYCCVF/mO6TRO5QQhJVWXd5PjVdNnb6rHbkHiDR9verwnig==",
+      "type": "package",
+      "path": "geocoordinate/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "geocoordinate.2.0.1.nupkg.sha512",
+        "geocoordinate.nuspec",
+        "src/GeoCoordinate.cs",
+        "src/GeoPosition.cs"
+      ]
+    },
     "Microsoft.NETCore.App/2.1.0": {
       "sha512": "JNHhG+j5eIhG26+H721IDmwswGUznTwwSuJMFe/08h0X2YarHvA15sVAvUkA/2Sp3W0ENNm48t+J7KTPRqEpfA==",
       "type": "package",
@@ -691,6 +719,18 @@
         "netstandard.library.nuspec"
       ]
     },
+    "System.Device.Location.Portable/1.0.0": {
+      "sha512": "VttxozXEleYcK2NiMo7xKMhDCCJbKtjnxcWDmqu703DeceLTI/9jopfEblyZKL0DWHGyOYLEan06yk6Hcv2cXw==",
+      "type": "package",
+      "path": "system.device.location.portable/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/System.Device.Portable.dll",
+        "system.device.location.portable.1.0.0.nupkg.sha512",
+        "system.device.location.portable.nuspec"
+      ]
+    },
     "Atlass.Riegl/1.0.0": {
       "type": "project",
       "path": "../Atlass.Riegl/Atlass.Riegl.csproj",
@@ -700,7 +740,9 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Atlass.Riegl >= 1.0.0",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "GeoCoordinate >= 2.0.1",
+      "Microsoft.NETCore.App >= 2.1.0",
+      "System.Device.Location.Portable >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -748,10 +790,18 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
+          "GeoCoordinate": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          },
           "Microsoft.NETCore.App": {
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "System.Device.Location.Portable": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [
@@ -761,5 +811,17 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Device.Location.Portable 1.0.0' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
+      "libraryId": "System.Device.Location.Portable",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v2.1"
+      ]
+    }
+  ]
 }

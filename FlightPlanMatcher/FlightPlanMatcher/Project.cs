@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Device.Location;
 
 namespace FlightPlanMatcher
 {
@@ -13,19 +14,40 @@ namespace FlightPlanMatcher
 
         public void MatchPairs(ActualFlightProject actualFlightProject, PlannedFlightProject plannedFlightProject)
         {
-            // need to recieve and compare an "ActualFlightProject" and "PlannedFlightProject" objects. Loop through the swaths in each and
-            // compare based on start/finish lat and long of each swath. Some swaths may be flown in the wrong direction, some swaths may
-            // be imcomplete or even in 2 halves. Try to be careful how this one is approached. 
-            // You're a surveyor; geometry is your wheel house, you've got this.....
+            // New "PlannedFlightProject" object to use for comparison
 
-            // if actualFlightProject.plannedorder == actualFlightProject.actualorder { match swaths together here }
-            // else if 
+            PlannedFlightProject newPlannedFlight = new PlannedFlightProject();
+            KMLParser kmlParser = new KMLParser();
+            newPlannedFlight = kmlParser.ParseKMLFile();
+
+            // New "ActualFlightProject" object to use for comparison
+
+            ActualFlightProject newActualFlight = new ActualFlightProject();
+            RPPParser rppParser = new RPPParser();
+            newActualFlight = RPPParser.AddSwathsFromRPP();
+
+
+            var test = new GeoCoordinate();
 
 
 
+            // try with matching start or finish lat or longs to each other with a <400m difference
+
+            foreach (var swath in newPlannedFlight.PlannedSwathList)
+            {
+                
+
+
+
+            }
 
 
         }
+
+        //public float DistanceDifference()
+        //{
+
+        //}
 
     }
 }
