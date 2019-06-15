@@ -19,7 +19,5 @@ namespace FlightPlanMatcher
         public int? PlannedOrder { get; set; }
         public Atlass.Riegl.LaserConfiguration sensor { get; set; }
 
-
-
     }
 }

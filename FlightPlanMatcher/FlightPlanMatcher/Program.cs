@@ -28,6 +28,10 @@ namespace FlightPlanMatcher
 
             Console.WriteLine("Distance between 1 and 2: " + newGeo.GetDistanceTo(newGeo1));
 
+            Console.WriteLine("Total planned flights: " + plannedFlightProject.totalPlannedSwaths());
+
+           
+
         }
     }
 }
